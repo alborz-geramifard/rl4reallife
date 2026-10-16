@@ -1,0 +1,4331 @@
+{
+ "2019": {
+  "year": 2019,
+  "edition": "1st",
+  "conf": "ICML 2019",
+  "date": "June 14, 2019",
+  "city": "Long Beach, CA",
+  "location": "Long Beach Convention Center",
+  "location_url": "https://icml.cc/Conferences/2019",
+  "mode": "In-person",
+  "intro": [
+   "Reinforcement learning (RL) is a general learning, predicting, and decision making paradigm. RL provides solution methods for sequential decision making problems as well as those can be transformed into sequential ones. RL connects deeply with optimization, statistics, game theory, causal inference, sequential experimentation, etc., overlaps largely with approximate dynamic programming and optimal control, and applies broadly in science, engineering and arts.",
+   "RL has been making steady progress in academia recently, e.g., Atari games, AlphaGo, visuomotor policies for robots. RL has also been applied to real world scenarios like recommender systems and neural architecture search. See a recent collection about <a href=\"https://medium.com/@yuxili/rl-applications-73ef685c07eb\" target=\"_blank\" rel=\"noopener\">RL applications</a>. It is desirable to have RL systems that work in the real world with real benefits. However, there are many issues for RL though, e.g. generalization, sample efficiency, and exploration vs. exploitation dilemma. Consequently, RL is far from being widely deployed. Common, critical and pressing questions for the RL community are then: Will RL have wide deployments? What are the issues? How to solve them?",
+   "The goal of this workshop is to bring together researchers and practitioners from industry and academia interested in addressing practical and/or theoretical issues in applying RL to real life scenarios, review state of the arts, clarify impactful research problems, brainstorm open challenges, share first-hand lessons and experiences from real life deployments, summarize what has worked and what has not, collect tips for people from industry looking to apply RL and RL experts interested in applying their methods to real domains, identify potential opportunities, generate new ideas for future lines of research and development, and promote awareness and collaboration. This is not \"yet another RL workshop\": it is about how to successfully apply RL to real life applications. This is a less addressed issue in the RL/ML/AI community, and calls for immediate attention for sustainable prosperity of RL research and development."
+  ],
+  "schedule": [
+   {
+    "time": "8:30-8:50",
+    "what": "Optional early-bird posters",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "8:50-9:00",
+    "what": "Opening remarks (Yuxi Li)",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "9:00-10:00",
+    "what": "Invited talks (chaired by Tao Wang)<br>David Silver (DeepMind) (<a href=\"https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii\" target=\"_blank\" rel=\"noopener\">video</a>)<br>John Langford (Microsoft Research) (<a href=\"https://slideslive.com/38916906\" target=\"_blank\" rel=\"noopener\">video</a>)<br>Craig Boutilier (Google Research) (<a href=\"https://slideslive.com/38916907/reinforcement-learning-in-recommender-systems-some-challenges\" target=\"_blank\" rel=\"noopener\">video</a> )",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "10:00-11:00",
+    "what": "Posters (coffee break 10:30-11:00)",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "11:00-12:00",
+    "what": "Panel discussion (moderated by Alborz Geramifard)<br>Craig Boutilier (Google Research)<br>Emma Brunskill (Stanford)<br>Chelsea Finn (Google Brain, Stanford, UC Berkeley)<br>Mohammad Ghavamzadeh (Facebook AI)<br>John Langford (Microsoft Research)<br>David Silver (DeepMind)<br>Peter Stone (UT Austin, Cogitai)",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "12:00-12:05",
+    "what": "Closing remarks (Lihong Li)",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "12:05-12:30",
+    "what": "Optional posters",
+    "links": [],
+    "brk": true
+   }
+  ],
+  "talks": [
+   {
+    "name": "Craig Boutilier",
+    "aff": "Google Research",
+    "title": "Reinforcement Learning in Recommender Systems: Some Challenges",
+    "abstract": "I'll present a brief overview of some recent work on reinforcement learning motivated by practical issues that arise in the application of RL to online, user-facing applications like recommender systems. These include stochastic action sets, long-term cumulative effects, and combinatorial action spaces. I'll provide some detail on the last of these, describing SlateQ, a novel decomposition technique that allows value-based RL (e.g., Q-learning) in slate-based recommender to scale to commercial production systems, and briefly describe both small-scale simulation and a large-scale experiment with YouTube. Joint work with various collaborators.",
+    "bio": "Craig is Principal Scientist at Google, working on various aspects of decision making under uncertainty (e.g., reinforcement learning, Markov decision processes, user modeling, preference modeling and elicitation) and recommender systems. He received his Ph.D. from the University of Toronto in 1992, and has held positions at the University of British Columbia, University of Toronto, CombineNet, and co-founded Granata Decision Systems.<br><br>Craig was Editor-in-Chief of JAIR; Associate Editor with ACM TEAC, JAIR, JMLR, and JAAMAS; Program Chair for IJCAI-09 and UAI-2000. Boutilier is a Fellow of the Royal Society of Canada (RSC), the Association for Computing Machinery (ACM) and the Association for the Advancement of Artificial Intelligence (AAAI). He was recipient of the 2018 ACM/SIGAI Autonomous Agents Research Award and a Tier I Canada Research Chair; and has received (with great co-authors) a number of Best Paper awards including: the 2009 IJCAI-JAIR Best Paper Prize; the 2014 AIJ Prominent Paper Award; and the 2018 NeurIPS Best Paper Award.",
+    "video": "https://slideslive.com/38916907/reinforcement-learning-in-recommender-systems-some-challenges",
+    "photo": "assets/people/craig-boutilier.jpg"
+   },
+   {
+    "name": "John Langford",
+    "aff": "Microsoft Research",
+    "title": "How do we make Real World Reinforcement Learning revolution?",
+    "abstract": "Doing Real World Reinforcement Learning implies living with steep constraints on the sample complexity of solutions. Where is this viable? Where might it be viable in the near future? In the far future? How can we design a research program around identifying and building such solutions? In short, what are the missing elements we need to really make reinforcement learning more mundane and commonly applied than Supervised Learning? The potential is certainly there given the naturalness of RL compared to supervised learning, but the present is manifestly different.",
+    "bio": "<a href=\"https://en.wikipedia.org/wiki/John_Langford_(computer_scientist\" target=\"_blank\" rel=\"noopener\">https://en.wikipedia.org/wiki/John_Langford_(computer_scientist)</a>)",
+    "video": "https://slideslive.com/38916906",
+    "photo": "assets/people/john-langford.png"
+   },
+   {
+    "name": "David Silver",
+    "aff": "DeepMind",
+    "title": "AlphaStar: Mastering the Game of StarCraft II",
+    "abstract": "In recent years, the real-time strategy game of StarCraft has emerged by consensus as an important challenge for AI research. It combines several major difficulties that are intractable for many existing algorithms: a large, structured action space; imperfect information about the opponent; a partially observed map; and cycles in the strategy space. Each of these challenges represents a major difficulty faced by real-world applications, for example those based on internet-scale action spaces, game theory in e.g. security, point-and-click interfaces, or robust AI in the presence of diverse and potentially exploitative user strategies. Here, we introduce AlphaStar: a novel combination of deep learning and reinforcement learning that mastered this challenging domain and defeated human professional players for the first time.",
+    "bio": "<a href=\"https://en.wikipedia.org/wiki/David_Silver_(programmer\" target=\"_blank\" rel=\"noopener\">https://en.wikipedia.org/wiki/David_Silver_(programmer)</a>)",
+    "video": "https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii",
+    "photo": "assets/people/david-silver.jpg"
+   }
+  ],
+  "panels": [
+   {
+    "name": "Panel discussion",
+    "chairs": "Moderated by Alborz Geramifard",
+    "video": null,
+    "ask": null,
+    "members": [
+     {
+      "name": "Craig Boutilier",
+      "aff": "Google Research",
+      "url": null,
+      "photo": "assets/people/craig-boutilier.jpg",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Emma Brunskill",
+      "aff": "Stanford",
+      "url": null,
+      "photo": "assets/people/emma-brunskill.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Chelsea Finn",
+      "aff": "Google Brain, Stanford, UC Berkeley",
+      "url": null,
+      "photo": "assets/people/chelsea-finn.jpg",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Mohammad Ghavamzadeh",
+      "aff": "Facebook AI",
+      "url": null,
+      "photo": "assets/people/mohammad-ghavamzadeh.jpg",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "John Langford",
+      "aff": "Microsoft Research",
+      "url": null,
+      "photo": "assets/people/john-langford.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "David Silver",
+      "aff": "DeepMind",
+      "url": null,
+      "photo": "assets/people/david-silver.jpg",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Peter Stone",
+      "aff": "UT Austin / Cogitai",
+      "url": null,
+      "photo": "assets/people/peter-stone.png",
+      "role": "",
+      "links": []
+     }
+    ]
+   }
+  ],
+  "papers_intro": "We have papers/posters from submissions and also by invitation. We organize them into the following categories: best papers, position papers, benchmark/toolbox papers, applications papers about production systems, autonomous driving, business management, chemistry, computer systems, healthcare, and robotics/manufacture, and algorithm/theory papers, in various topics and in bandits, off-policy learning, and safety. Posters are available for some papers. Submitted papers are available <a href=\"https://openreview.net/group?id=ICML.cc/2019/Workshop/RL4RealLife\" target=\"_blank\" rel=\"noopener\">here</a>.",
+  "paper_groups": [
+   {
+    "title": "Best Papers",
+    "papers": [
+     {
+      "title": "Lyapunov-based Safe Policy Optimization for Continuous Control",
+      "authors": "Yinlam Chow, Ofir Nachum, Aleksandra Faust, Mohammad Ghavamzadeh, Edgar Duenez-Guzman",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SJgUYBVLsN"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Challenges of Real-World Reinforcement Learning",
+      "authors": "Gabriel Dulac-Arnold, Daniel Mankowitz, Todd Hester",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=S1xtR52NjN"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1513-LpuAWKA1ci5L-25lH4tnZeCOgo-f/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Horizon: Facebook’s Open Source Applied Reinforcement Learning Platform",
+      "authors": "Jason Gauci, Edoardo Conti, Yitao Liang, Kittipat Virochsiri, Yuchen He, Zachary Kaden, Vivek Narayanan, Xiaohui Ye, Zhengxing Chen",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SylQKinLi4"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Park: An Open Platform for Learning Augmented Computer Systems",
+      "authors": "Hongzi Mao, Akshay Narayan, Parimarjan Negi, Hanrui Wang, Jiacheng Yang, Haonan Wang, Mehrdad Khani, Songtao He, Ravichandra Addanki, Ryan Marcus, Frank Cangialosi, Wei-Hung Weng, Song Han, Tim Kraska, Mohammad Alizadeh",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=BkgfRbEPsE"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1_qZ-FI3Fk2EPFulhBFdqbh24p4rhDS1O/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Position Papers",
+    "papers": [
+     {
+      "title": "Challenges of Real-World Reinforcement Learning",
+      "authors": "Gabriel Dulac-Arnold, Daniel Mankowitz, Todd Hester",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=S1xtR52NjN"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Lessons from Contextual Bandit Learning in a Customer Support Bot",
+      "authors": "Nikos Karampatziakis, Sebastian Kochman, Jade Huang, Paul Mineiro, Kathy Osborne, Weizhu Chen",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1905.02219"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Benchmarks/Toolbox Papers",
+    "papers": [
+     {
+      "title": "VRKitchen: an Interactive 3D Environment for Learning Real Life Cooking Tasks",
+      "authors": "Xiaofeng Gao, Ran Gong, Tianmin Shu, Xu Xie, Shu Wang, Song-Chun Zhu",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=rygmCx3vjE"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/13Te3_ynkWIK9IFCnqVkF70O83u_xtOiJ/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Park: An Open Platform for Learning Augmented Computer Systems",
+      "authors": "Hongzi Mao, Akshay Narayan, Parimarjan Negi, Hanrui Wang, Jiacheng Yang, Haonan Wang, Mehrdad Khani, Songtao He, Ravichandra Addanki, Ryan Marcus, Frank Cangialosi, Wei-Hung Weng, Song Han, Tim Kraska, Mohammad Alizadeh",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=BkgfRbEPsE"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1_qZ-FI3Fk2EPFulhBFdqbh24p4rhDS1O/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning for Sepsis Treatment: Baselines and Analysis",
+      "authors": "Aniruddh Raghu",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=BJekwh0ToN"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Applications: Production Systems",
+    "papers": [
+     {
+      "title": "Top-K Off-Policy Correction for a REINFORCE Recommender System",
+      "authors": "Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, Ed Chi",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1812.02353"
+       ],
+       [
+        "video",
+        "https://www.youtube.com/watch?v=HEqQ2_1XRTs"
+       ]
+      ],
+      "note": "invited poster, WSDM 2019 video"
+     },
+     {
+      "title": "Horizon: Facebook’s Open Source Applied Reinforcement Learning Platform",
+      "authors": "Jason Gauci, Edoardo Conti, Yitao Liang, Kittipat Virochsiri, Yuchen He, Zachary Kaden, Vivek Narayanan, Xiaohui Ye, Zhengxing Chen",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SylQKinLi4"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Data center cooling using model-predictive control",
+      "authors": "Nevena Lazic, Tyler Lu, Craig Boutilier, Moonkyung Ryu, Eehern Wong, Binz Roy, Greg Imwalle",
+      "links": [
+       [
+        "paper",
+        "https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf"
+       ]
+      ],
+      "note": "invited poster, NeurIPS 2018"
+     },
+     {
+      "title": "Real-world Video Adaptation with Reinforcement Learning",
+      "authors": "Hongzi Mao, Shannon Chen, Drew Dimmery, Shaun Singh, Drew Blaisdell, Yuandong Tian, Mohammad Alizadeh, Eytan Bakshy",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SJlCkwN8iV"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1OohmH-efxTb4Rpiyxl0pEasogmBdu1R0/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Environment Reconstruction with Hidden Confounders for Reinforcement Learning based Recommendation",
+      "authors": "Wenjie Shang, Yang Yu, Qingyang Li, Zhiwei Qin, Yiping Meng and Jieping Ye",
+      "links": [
+       [
+        "poster",
+        "https://drive.google.com/file/d/1kk3Af71dQn7jzhgx0vYZQOXE4DiyoErl/view?usp=sharing"
+       ]
+      ],
+      "note": "invited poster, KDD 2019"
+     },
+     {
+      "title": "A Deep Value-network Based Approach for Multi-Driver Order Dispatching",
+      "authors": "Xiaocheng Tang, Zhiwei Qin, Fan Zhang, Zhaodong Wang, Zhe Xu, Yintai Ma, Hongtu Zhu and Jieping Ye",
+      "links": [
+       [
+        "poster",
+        "https://drive.google.com/file/d/1ALEy4S-KnfyayeJNvY7fQpVrZHUN6zrT/view?usp=sharing"
+       ]
+      ],
+      "note": "invited poster, KDD 2019"
+     }
+    ]
+   },
+   {
+    "title": "Applications: Autonomous Driving",
+    "papers": [
+     {
+      "title": "Real-World Autonomous Vehicle Control Trained Entirely within Data-Driven Simulation",
+      "authors": "Alexander Amini, Igor Gilitschenski, Jacob Phillips, Julia Moseyko, Sertac Karaman, Daniela Rus",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SJxfr19IoN"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Applications: Business Management",
+    "papers": [
+     {
+      "title": "Autonomous Air Traffic Controller: A Deep Multi-Agent Reinforcement Learning Approach",
+      "authors": "Marc Brittain, Peng Wei",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=HJx_Xlqdj4"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Generative Adversarial User Model for Reinforcement Learning Based Recommendation System",
+      "authors": "Xinshi Chen, Shuang Li, Hui Li, Shaohua Jiang, Yuan Qi, Le Song",
+      "links": [
+       [
+        "paper",
+        "http://www.google.com/url?q=http%3A%2F%2Fproceedings.mlr.press%2Fv97%2Fchen19f%2Fchen19f.pdf&sa=D&sntz=1&usg=AOvVaw3ODGFjf3wvXK3QG-fiyVf4"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1_GBTu_m0yqaxaVO6jpXonsDlewWmSunq/view?usp=sharing"
+       ]
+      ],
+      "note": "invited poster, ICML 2019"
+     },
+     {
+      "title": "RecSim — A Configurable Recommender Systems Environment",
+      "authors": "Eugene Ie, Chih-wei Hsu, Martin Mladenov, Sanmit Narvekar, Jing Conan Wang, Rui Wu, Vihan Jain, Craig Boutilier",
+      "links": [
+       [
+        "poster",
+        "https://drive.google.com/file/d/1aK4R2dKfiTLxDATgbRSd64Uxe7rR5zNl/view?usp=sharing"
+       ]
+      ],
+      "note": "invited poster"
+     },
+     {
+      "title": "RetailNet: Enhancing Retails of Perishable Products with Multiple Selling Strategies via Pair-Wise Multi-Q Learning",
+      "authors": "Xiyao Ma, Fan Lu, Xiajun Pan, Yanlin Zhou, Xiaolin Li",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "Autonomous Airline Revenue Management: A Deep Reinforcement Learning Approach to Seat Inventory Control and Overbooking",
+      "authors": "Syed Arbab Mohd Shihab, Caleb Logemann, Deepak-George Thomas, Peng Wei",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=rJxRICuns4"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "A Reinforcement Learning Approach for Joint Replenishment Policy in Multi-Product Inventory System",
+      "authors": "Hiroshi Suetsugu, Yoshiaki Narusue, Hiroyuki Morikawa",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement learning in maintenance of civil infrastructures",
+      "authors": "Shiyin Wei, Hui Li",
+      "links": [],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Applications: Chemistry",
+    "papers": [
+     {
+      "title": "Optimizing 3D structure of H2O molecule using DDPG",
+      "authors": "Soo Kyung Kim, Peggy Li, Joanne Taery Kim, Piyush Karande, Yong Han",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=S1lTtj23iV"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1yPFI6ZGJj6nwXd4gayaj-9AopbVvQXGI/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Chemical Synthesis Planning via Reinforcement Learning and its Implications for Drug Discovery",
+      "authors": "Marwin Segler",
+      "links": [],
+      "note": "invited poster"
+     }
+    ]
+   },
+   {
+    "title": "Applications: Computer Systems",
+    "papers": [
+     {
+      "title": "Reinforcement Learning and Adaptive Sampling for Optimized DNN Compilation",
+      "authors": "Byung Hoon Ahn, Prannoy Pilligundla, Hadi Esmaeilzadeh",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=BJlk4QeajE"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "SmartChoices: Hybridizing Programming and Machine Learning",
+      "authors": "Victor Carbune, Thierry Coppey, Alexander Daryin, Thomas Deselaers, Nikhil Sarda, Jay Yagnik",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=Hkx6u1cVoE"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "A Deep Reinforcement Learning Perspective on Internet Congestion Control",
+      "authors": "Nathan Jay, Noga H. Rotman, Brighten Godfrey, Michael Schapira, Aviv Tamar",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1810.03259"
+       ]
+      ],
+      "note": "ICML 2019"
+     },
+     {
+      "title": "Staying up to Date with Online Content Changes Using Reinforcement Learning for Scheduling",
+      "authors": "Andrey Kolobov, Yuval Peres, Cheng Lu, Eric Horvitz",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=ByxjGvuKoE"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Meta-reasoning in Modular Software Systems via Reinforcement Learning",
+      "authors": "Aditya Modi, Debadeepta Dey, Alekh Agarwal, Adith Swaminathan, Besmira Nushi, Sean Andrist, Eric Horvitz",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1905.05179"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1Pcn6bOrLmIQD7KG0O_6OQUXySI77SpNA/view?usp=sharing"
+       ]
+      ],
+      "note": "invited poster"
+     }
+    ]
+   },
+   {
+    "title": "Applications: Energy",
+    "papers": [
+     {
+      "title": "Deep Reinforcement Learning for Continuous Power Allocation in Flexible High Throughput Satellites",
+      "authors": "Juan Jose Garau Luis, Markus Guerster, Edward Crawley, Bruce Cameron",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=rke-DWlco4"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1QUGprL571Q9iysZN2lgIvVXzKwlR1v_z/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Applications: Healthcare",
+    "papers": [
+     {
+      "title": "Dynamic Measurement Scheduling for Event Forecasting using Deep RL",
+      "authors": "Chun-Hao Chang, Mingjie Mai, Anna Goldenberg",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1901.09699"
+       ]
+      ],
+      "note": "invited poster, ICML 2019"
+     },
+     {
+      "title": "Optimizing Sequential Medical Treatments with Auto-Encoding Heuristic Search in POMDPs",
+      "authors": "Luchen Li, Matthieu Komorowski and Aldo A. Faisal",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1905.07465"
+       ]
+      ],
+      "note": "invited poster"
+     },
+     {
+      "title": "Personalized HeartSteps: A Reinforcement Learning Algorithm for Optimizing Physical Activity",
+      "authors": "Peng Liao, Kristjan Greenwald, Predrag Klasnja and Susan Murphy",
+      "links": [],
+      "note": "invited poster"
+     },
+     {
+      "title": "Crowdsourcing Reinforcement Learning to Optimize Knee Replacement Pathway",
+      "authors": "Hao Lu, Mengdi Wang",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning for Blood Glucose Control: Challenges and Opportunities",
+      "authors": "Ian Fox, Jenna Wiens",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=ByexVzSAs4"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1YRA37HWjRf2flP77qgudbRrQT0FpXDrs/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Intelligent Pooling in Thompson Sampling for Rapid Personalization in Mobile Health",
+      "authors": "Sabina Tomkins, Peng Liao, Serena Yeung, Predrag Klasnja, Susan Murphy",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=Ske1SIIUsE"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Applications: Robotics/Manufacture",
+    "papers": [
+     {
+      "title": "Deep Reinforcement Learning for Industrial Insertion Tasks with Visual Inputs and Natural Reward Signals",
+      "authors": "Gerrit Schoettler, Ashvin Nair, Jianlan Luo, Shikhar Bahl, Juan Aparicio Ojea, Eugen Solowjow, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=ryg5E-gy3E"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Algorithm & Theory",
+    "papers": [
+     {
+      "title": "Improving the Generalization of Visual Navigation Policies using Invariance Regularization",
+      "authors": "Michel Aractingi, Christopher Dance, Julien Perez, Tomi Silander",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SJel4-c2j4"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1kWw4CWiEBYCo2JrvnSqb1XU8PS7Hm_eR/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Curious iLQR: Resolving Uncertainty in Model-based RL",
+      "authors": "Sarah Bechtle, Akshara Rai, Yixin Lin, Ludovic Righetti, Franziska Meier",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SkxvBny-o4"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Deep Knowledge Based Agent: Learning to do tasks by self-thinking about imaginary worlds",
+      "authors": "Ali Davody",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1IAfodWqANKjuvtAnnfaCZzOS5DB3l0X9/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "P3O: Policy-on Policy-off Policy Optimization",
+      "authors": "Rasool Fakoor, Pratik Chaudhari, Alexander J. Smola",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=rylwNNypsN"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Contextual Markov Decision Processes using Generalized Linear Models",
+      "authors": "Aditya Modi, Ambuj Tewari",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=Bklh0SiQiN"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1nklTuz9gq7Tg-chF_kCt3Xd6CEAWdFE_/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Addressing Sample Complexity in Visual Tasks Using Hindsight Experience Replay and Hallucinatory GANs",
+      "authors": "Himanshu Sahni, Toby Buckley, Pieter Abbeel, Ilya Kuzovkin",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=H1xSXdV0i4"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Fast Efficient Hyperparameter Tuning for Policy Gradients",
+      "authors": "Supratik Paul, Vitaly Kurin, Shimon Whiteson",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=Bkx5talfoV"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1USG0tsDsNfW8PnfyWXpmKuoLkf7xaVF9/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Q-Learning for Continuous Actions with Cross-Entropy Guided Policies",
+      "authors": "Riley Simmons-Edler, Ben Eisner, Eric Mitchell, Sebastian Seung, Daniel Lee",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SyeHbtgSiN"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/19VhYgrudaJfB_YLCyl4eL64ODZ823q8i/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "R-MADDPG for Partially Observable Environments and Limited Communication",
+      "authors": "Rose E. Wang, Michael Everett, Jonathan P. How",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=Ske_NJK2s4"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Algorithm & Theory: Bandits",
+    "papers": [
+     {
+      "title": "A Contextual Bandit Bake-off",
+      "authors": "Alberto Bietti, Alekh Agarwal, John Langford",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1802.04064"
+       ]
+      ],
+      "note": "invited poster"
+     },
+     {
+      "title": "Optimal Exploitation of Clustering and History Information in Multi-armed Bandit Problem",
+      "authors": "Djallel Bouneffouf, Srinivasan Parthasarathy, Horst Samulowitz, Martin Wistuba",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=HkesMDe6qE"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Distribution-dependent and Time-uniform Bounds for Piecewise i.i.d Bandits",
+      "authors": "Subhojyoti Mukherjee, Odalric Maillard",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=Ske_J_SrjE"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1izpIFfGsmvy2iZevMnoZ04H6Mf5EaoGe/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Multinomial Logit Contextual Bandits",
+      "authors": "Min-hwan Oh, Garud Iyengar",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=rJlPVMc2iV"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Algorithm & Theory: Off-Policy Learning",
+    "papers": [
+     {
+      "title": "Off-Policy Evaluation via Off-Policy Classification",
+      "authors": "Alex Irpan, Kanishka Rao, Konstantinos Bousmalis, Chris Harris, Julian Ibarz, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1906.01624"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1XrfcWokEkOUp49SKEEkeuEveWxtbCmKH/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Off-Policy Policy Gradient with State Distribution Correction",
+      "authors": "Yao Liu, Adith Swaminathan, Alekh Agarwal, Emma Brunskill",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=S1g-qaGhoE"
+       ]
+      ],
+      "note": "invited poster"
+     },
+     {
+      "title": "DualDICE: Efficient Estimation of Off-Policy Stationary Distribution Corrections",
+      "authors": "Ofir Nachum, Yinlam Chow, Bo Dai, Lihong Li",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SygrvzwniE"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/1aNFexK2x3XOkgyX0ltgG9qJt7zbGiozs/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   },
+   {
+    "title": "Algorithm & Theory: Safety",
+    "papers": [
+     {
+      "title": "Lyapunov-based Safe Policy Optimization for Continuous Control",
+      "authors": "Yinlam Chow, Ofir Nachum, Aleksandra Faust, Mohammad Ghavamzadeh, Edgar Duenez-Guzman",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=SJgUYBVLsN"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Distributionally Robust Reinforcement Learning",
+      "authors": "Elena Smirnova, Elvis Dohmatob, Jérémie Mary",
+      "links": [
+       [
+        "paper",
+        "https://openreview.net/forum?id=r1xfz_93oN"
+       ],
+       [
+        "poster",
+        "https://drive.google.com/file/d/14Gg3O01z9M9-y8HZlkcyNwoJxp1DfLOs/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   }
+  ],
+  "cfp": [
+   "The main goals of the workshop are to: (1) have experts share their successful stories of applying RL to real-world problems; and (2) identify research sub-areas critical for real-world applications such as reliable evaluation, benchmarking, and safety/robustness.",
+   "We invite paper submissions successfully applying RL and relevant algorithms to real life RL applications by addressing relevant RL issues. Under the central theme of making RL work in real life scenarios, no further constraints are set, to facilitate open discussions and to foster the most potential creativity and imagination from the community. We will prioritize work that propose interesting and impactful contributions. Our technical topics of interest are general, including but not limited to concrete topics below:",
+   "• RL and relevant algorithms: value-based, policy-based, model-free, model-based, online, offline, on-policy, off-policy, hierarchical, multi-agent, relational, multi-armed bandit, (linear, nonlinear, deep/neural, symbolic) representation learning, unsupervised learning, self-supervised learning, transfer learning, sim-to-real, multi-task learning, meta-learning, imitation learning, continual learning, causal inference, and reasoning;",
+   "• Issues: generalization, deadly triad, sample/time/space efficiency, exploration vs. exploitation, reward specification, stability, convergence, scalability, model-based learning (model validation and model error estimation), prior knowledge, safety, interpretability, reproducibility, hyper-parameters tuning, and boilerplate code;",
+   "• Applications: recommender systems, advertisements, conversational AI, business, finance, healthcare, education, robotics, autonomous driving, transportation, energy, chemical synthesis, drug design, industry control, drawing, music, and other problems in science, engineering and arts.",
+   "We warmly welcome position papers.",
+   "We invite unpublished submissions up to 8 pages excluding references, in PDF format using the ICML 2019 template and style guidelines. We are open to papers currently under review at other venues. Submission is single-blind. All accepted papers will be presented as posters, and a few of them will be selected for spotlight presentations. There will be no proceedings for this workshop. However, accepted contributions will be made available on the workshop website, unless authors opt out. The submission website is: <a href=\"https://openreview.net/group?id=ICML.cc/2019/Workshop/RL4RealLife\" target=\"_blank\" rel=\"noopener\">https://openreview.net/group?id=ICML.cc/2019/Workshop/RL4RealLife</a>."
+  ],
+  "dates": [
+   [
+    "Submission deadline",
+    "May 5, 2019 (23:59 EST)"
+   ],
+   [
+    "Author notification",
+    "May 28, 2019"
+   ],
+   [
+    "Final submission",
+    "June 3, 2019"
+   ]
+  ],
+  "cfp_extra": [
+   "Info for Posters:",
+   "All posters will be presented inside the room of the workshop. There are no poster boards at workshops. Posters are taped to the wall. Posters should be on light weight paper, not laminated. Please make posters 36W x 48H inches or 90 x 122 cm. Please follow <a href=\"https://icml.cc/Conferences/2019/AcceptedWorkshopFAQ\" target=\"_blank\" rel=\"noopener\">the specification on ICML website</a>. (\"Please ask your presenters to make their posters posters 24W x 36H inches or 61 x 91 cm.\")",
+   "Final version:",
+   "<a href=\"https://drive.google.com/open?id=19Ess3_MO7fl2d3tPMiiRZemifu1iYvfn\" target=\"_blank\" rel=\"noopener\">Style files</a> for our workshop (customized from that of ICML 2019).",
+   "Instruction: Based on <a href=\"https://icml.cc/Conferences/2019/StyleAuthorInstructions\" target=\"_blank\" rel=\"noopener\">ICML 2019 submission style files</a>, 1) change \\usepackage{icml2019} to \\usepackage[accepted]{icml2019} in your .tex file for the final style; and 2) use our customized icml2019.sty file for the foot note of our workshop."
+  ],
+  "pc": [
+   "David Abel (Brown University)",
+   "Omid Ardakanian (University of Alberta)",
+   "Kamyar Azizzadenesheli (Purdue University)",
+   "Justin Basilico (Netflix)",
+   "Victor Carbune (Google Research)",
+   "Minmin Chen (Google Research)",
+   "Yinlam Chow (Google Research)",
+   "Bo Dai (Google Research)",
+   "Christoph Dann (Carnegie Mellon University)",
+   "Gabriel Dulac-Arnold (Google Research)",
+   "Ben Eisner (Samsung Research)",
+   "Rasool Fakoor (Amazon)",
+   "Xiaofeng Gao (University of California, Los Angeles)",
+   "Todd Hester (DeepMind)",
+   "Nikos Karampatziakis (Microsoft)",
+   "Soo Kyung Kim (Lawrence Livermore National Labs)",
+   "Andrey Kolobov (Microsoft)",
+   "Branislav Kveton (Google Research)",
+   "Minhae Kwon (Rice University)",
+   "Peng Liao (Harvard University)",
+   "Xin Liu (University of California, Davis)",
+   "Yao Liu (Stanford University)",
+   "Hongzi Mao (Massachusetts Institute of Technology)",
+   "Ofir Nachum (Google Research)",
+   "Zhiwei Tony Qin (Didi Chuxing)",
+   "Marwin Segler (BenevolentAI)",
+   "Jun Wang (University College London)",
+   "Zhipeng Wang (Apple)",
+   "Peng Wei (Iowa State University)",
+   "Hengshuai Yao (Huawei Technologies)",
+   "Kai Yu (Shanghai Jiao Tong University)",
+   "Yang Yu (Nanjing University)",
+   "Quan Yuan (Inspir.AI)",
+   "Shangtong Zhang (University of Oxford)",
+   "Xiangyu Zhao (Michigan State University)"
+  ],
+  "chairs": [
+   {
+    "name": "Alborz Geramifard",
+    "aff": "Facebook AI",
+    "url": "https://alborz-geramifard.com/",
+    "photo": "assets/people/alborz-geramifard.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Lihong Li",
+    "aff": "Google Research",
+    "url": "https://lihongli.github.io",
+    "photo": "assets/people/lihong-li.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Yuxi Li",
+    "aff": "",
+    "url": "http://attain.ai",
+    "photo": "assets/people/yuxi-li.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Csaba Szepesvari",
+    "aff": "DeepMind & U. of Alberta",
+    "url": "https://sites.ualberta.ca/~szepesva/",
+    "photo": "assets/people/csaba-szepesvari.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Tao Wang",
+    "aff": "Apple",
+    "url": null,
+    "photo": "assets/people/tao-wang.png",
+    "role": "",
+    "links": []
+   }
+  ],
+  "comm": [
+   [
+    "rl4reallife@gmail.com",
+    "mailto:rl4reallife@gmail.com"
+   ],
+   [
+    "Slack",
+    "https://join.slack.com/t/rl4reallife/shared_invite/enQtNjQyMTc5ODY1NjgyLTJhNTYzNWY1YjJiNzhlOGMxMWM3ZjQ1YWE5YTY1ZmZmNDRmYjY1NjMzOGIzMmIyNmQxZjBlOGFmYzQ0ODliYTM"
+   ],
+   [
+    "Twitter: #RL4RealLife",
+    null
+   ]
+  ],
+  "top_links": [],
+  "previous": [],
+  "venue_image": "assets/venues/2019.jpg",
+  "venue_credit": {},
+  "venue_focus": "center 60%"
+ },
+ "2020": {
+  "year": 2020,
+  "edition": "2nd",
+  "conf": "Virtual",
+  "date": "June 27–28, 2020",
+  "city": "Online",
+  "location": "Virtual workshop",
+  "location_url": null,
+  "mode": "Virtual",
+  "intro": [
+   "Reinforcement learning (RL) is a general learning, predicting, and decision making paradigm that applies broadly in science, engineering and arts. RL has seen prominent successes in many problems, such as Atari games, AlphaGo, robotics, recommender systems, and AutoML. However, applying RL in the real world remains challenging, so a natural question is:"
+  ],
+  "top_links": [
+   [
+    "Poster info spreadsheet",
+    "https://docs.google.com/spreadsheets/d/1hXXWHyaLT7SYQwS9-MQXjok2Heub9HQedvlSrpcOxBc/edit?usp=sharing"
+   ],
+   [
+    "Slack for RL for Real Life",
+    "https://join.slack.com/t/rl4reallife/shared_invite/zt-870hb7ma-zcqodv8t0S9X5DclHh08Yw"
+   ],
+   [
+    "Streaming: RL + healthcare panel",
+    "https://youtu.be/dDSENm2smkQ"
+   ],
+   [
+    "Streaming: RL general topic panel",
+    "https://youtu.be/lDdC8Gjat9w"
+   ]
+  ],
+  "schedule": [
+   {
+    "time": "",
+    "what": "<b>Atlantic run:</b> San Francisco 9am–12pm, June 27 · <b>Pacific run:</b> SF 6–9pm, June 27",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "0:00-1:00",
+    "what": "Live panel discussion / Q&amp;A",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "1:00-3:00",
+    "what": "Online poster sessions",
+    "links": [],
+    "brk": true
+   }
+  ],
+  "panels": [
+   {
+    "name": "RL + Healthcare",
+    "when": "SF 9-10am, June 27",
+    "chairs": "",
+    "video": "https://youtu.be/dDSENm2smkQ",
+    "ask": "http://www.tricider.com/brainstorming/3QQKfLJBENZ",
+    "members": [
+     {
+      "name": "Finale Doshi-Velez",
+      "aff": "Harvard",
+      "url": "https://finale.seas.harvard.edu",
+      "photo": "assets/people/finale-doshi-velez.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://harvard.zoom.us/rec/share/99xrE4rU-09Jeavs4x-HU_ExHo3beaa8gyhNqaILxBkWFYFNYGUAdmovX44VKiTm?startTime=1592788318000"
+       ]
+      ]
+     },
+     {
+      "name": "Niranjani Prasad",
+      "aff": "Princeton",
+      "url": "https://niranjaniprasad.github.io",
+      "photo": "assets/people/niranjani-prasad.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://youtu.be/djRL_erWD0c"
+       ]
+      ]
+     },
+     {
+      "name": "Suchi Saria",
+      "aff": "Johns Hopkins University",
+      "url": "https://suchisaria.jhu.edu",
+      "photo": "assets/people/suchi-saria.jpg",
+      "role": "",
+      "links": [
+       [
+        "3 hours tutorial",
+        "https://youtu.be/ymDTtEqS4B4"
+       ],
+       [
+        "part 2",
+        "https://youtu.be/i_71hWYsm9c"
+       ]
+      ]
+     },
+     {
+      "name": "Susan Murphy",
+      "aff": "Harvard",
+      "url": "https://scholar.google.com/citations?user=q-DPFdUAAAAJ&hl=en",
+      "photo": "assets/people/susan-murphy.jpg",
+      "role": "Moderator",
+      "links": []
+     },
+     {
+      "name": "Omer Gottesman",
+      "aff": "Harvard",
+      "url": "https://scholar.google.com/citations?user=glNJx5zYUbsC&hl=en",
+      "photo": "assets/people/omer-gottesman.png",
+      "role": "Chair",
+      "links": []
+     }
+    ]
+   },
+   {
+    "name": "RL General Topic",
+    "when": "SF 6-7pm, June 27",
+    "chairs": "",
+    "video": "https://youtu.be/lDdC8Gjat9w",
+    "ask": "http://www.tricider.com/brainstorming/2dvBd8MNqlZ",
+    "members": [
+     {
+      "name": "Ed Chi",
+      "aff": "Google",
+      "url": "https://research.google/people/EdChi/",
+      "photo": "assets/people/ed-chi.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Chelsea Finn",
+      "aff": "Stanford",
+      "url": "https://ai.stanford.edu/~cbfinn/",
+      "photo": "assets/people/chelsea-finn.jpg",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://youtu.be/zghYusfk1aY"
+       ]
+      ]
+     },
+     {
+      "name": "Jason Gauci",
+      "aff": "Facebook",
+      "url": "https://scholar.google.com/citations?user=1R-Us28AAAAJ&hl=en",
+      "photo": "assets/people/jason-gauci.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Peter Stone",
+      "aff": "UT Austin / Sony AI",
+      "url": "https://www.cs.utexas.edu/~pstone/",
+      "photo": "assets/people/peter-stone.png",
+      "role": "Moderator",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=MSwyy6BxZ6s"
+       ]
+      ]
+     },
+     {
+      "name": "Lihong Li",
+      "aff": "Google",
+      "url": "https://lihongli.github.io",
+      "photo": "assets/people/lihong-li.png",
+      "role": "Chair",
+      "links": []
+     }
+    ]
+   }
+  ],
+  "panels_intro": "We will request invited speakers and moderators to share their expertise w.r.t. the real life aspects of RL by pre-recording videos. The moderators will host a live panel discussion at the listed times, and there will be polls for audience members to submit their questions during these live panel discussions.",
+  "cfp": [
+   "What are the challenges of applying RL in the real world, and how can we solve them?",
+   "The main goals of the conference are to:",
+   "(1) identify key research problems that are critical for the success of real-world applications;",
+   "(2) report progress on addressing these critical issues; and",
+   "(3) have practitioners share their success stories of applying RL to real-world problems, and the insights gained from the applications.",
+   "We invite you to submit papers that successfully apply RL algorithms to real-life problems by addressing practically relevant RL issues. Our topics of interest are general, including but not limited to topics below:",
+   "Practical RL algorithms, which covers all algorithmic challenges of RL, especially those that directly address challenges faced by real-world applications;",
+   "Practical issues: generalization, sample/time/space efficiency, exploration vs. exploitation, reward specification and shaping, scalability, model-based learning (model validation and model error estimation), incorporating prior knowledge, safety, accountability, interpretability, reproducibility, hyper-parameter tuning;",
+   "Applications: advertisements, autonomous driving, business, chemical synthesis, conversational AI, drawing, drug design, education, energy, finance, healthcare, industrial control, music, recommender systems, robotics, transportation, or other problems in science, engineering and arts."
+  ],
+  "dates": [
+   [
+    "Deadline",
+    "June 15, 2020"
+   ],
+   [
+    "Notification",
+    "June 21, 2020"
+   ]
+  ],
+  "cfp_extra": [
+   "<a href=\"https://cmt3.research.microsoft.com/RL4RealLife2020/\" target=\"_blank\" rel=\"noopener\">Submission website</a>",
+   "<a href=\"https://drive.google.com/file/d/1pIdK2S1LB8lSjX3gwCFtu0VeM6peM7GX/view?usp=sharing\" target=\"_blank\" rel=\"noopener\">Style files</a>. (Changed the header to \"Presented as a poster at RL4RealLife 2020\".) We will recommend submissions to use these provided style files (adapted from ICLR files). For previously published papers, feel free to use previous formats.",
+   "Accepted papers are non-archival and non-peer-reviewed. We welcome submissions of recently published work.",
+   "Authors will pre-record video presentation of their work, and they will also host their own video conferencing channels (with Zoom/Google Hangout) during the online poster session portion of the conference.",
+   "We do not set the length of a pre-recorded talk for your flexibility. We recommend 5 minutes for a concise introduction, or up to 20 minutes for a full discussion, but not exceeding 30 minutes."
+  ],
+  "paper_groups": [
+   {
+    "title": "Accepted papers",
+    "papers": [
+     {
+      "title": "Deterministic Policy Gradient with Multi-Objective Rewards",
+      "authors": "Xu Chen, Yali Du, Jun Wang",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1swPaBqbKMQUapd5ZzBZfXdPjNCNFbCND/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://slideslive.com/38930899"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Multi Type Mean Field Reinforcement Learning",
+      "authors": "Sriram Ganapathi Subramanian, Pascal Poupart, Matthew E. Taylor, and Nidhi Hegde",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/pdf/2002.02513.pdf"
+       ],
+       [
+        "video",
+        "https://underline.io/lecture/207-multi-type-mean-field-reinforcement-learning"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning for Personalization: A Systematic Literature Review",
+      "authors": "Floris den Hengst, Eoin Martino Grua, Ali el Hassouni, and Mark Hoogendoorn",
+      "links": [
+       [
+        "paper",
+        "https://doi.org/10.3233/DS-200028"
+       ],
+       [
+        "video",
+        "https://surfdrive.surf.nl/files/index.php/s/eV1TVWzXTV1k098"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Sample Efficient Policy Gradient Methods with Recursive Variance Reduction",
+      "authors": "Pan Xu, Felicia Gao, Quanquan Gu",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/pdf/1909.08610.pdf"
+       ],
+       [
+        "video",
+        "https://youtu.be/9fj6LEyaX-k"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Automated Optical Multi-Layer Design via Deep Reinforcement Learning",
+      "authors": "Haozhu Wang, Zeyu Zheng, Chengang Ji, L. Jay Guo",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2006.11940"
+       ],
+       [
+        "video",
+        "https://youtu.be/TBIEZZcZDxE"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "BADGR: An Autonomous Self-Supervised Learning-Based Navigation System",
+      "authors": "Gregory Kahn, Pieter Abbeel, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://sites.google.com/view/badgr"
+       ],
+       [
+        "video",
+        "https://youtu.be/UtoZEwrDHj4"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Expert-Supervised Reinforcement Learning for Offline Policy Learning and Evaluation",
+      "authors": "Aaron Sonabend, Junwei Lu, Leo A. Celi, Tianxi Cai, Peter Szolovits",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2006.13189"
+       ],
+       [
+        "video",
+        "https://youtu.be/2f9h1kjfdCM"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Model-Based Meta-Reinforcement Learning for Flight with Suspended Payloads",
+      "authors": "Suneel Belkhale, Rachel Li, Gregory Kahn, Rowan McAllister, Roberto Calandra, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://sites.google.com/view/meta-rl-for-flight"
+       ],
+       [
+        "video",
+        "https://youtu.be/AP5FgKjFpvQ"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Neural Dynamic Policies for End-to-End Sensorimotor Learning",
+      "authors": "Shikhar Bahl, Mustafa Mukadam, Abhinav Gupta, Deepak Pathak",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1PKCZDXp19r4WwRDrAxl2sXHzhZvXyof9/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://youtu.be/n2_hhP4nM3w"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Neural Approximate Dynamic Programming for On-Demand Ride-Pooling",
+      "authors": "Sanket Shah, Meghna Lowalekar, Pradeep Varakantham",
+      "links": [
+       [
+        "paper",
+        "https://sanketkshah.github.io/publication/ride-pooling/"
+       ],
+       [
+        "video",
+        "https://underline.io/lecture/493-neural-approximate-dynamic-programming-for-on-demand-ride-pooling"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Advancing Renewable Electricity Consumption With Reinforcement Learning",
+      "authors": "Filip Tolovski",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2003.04310"
+       ],
+       [
+        "video",
+        "https://slideslive.com/38930970"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "D4RL: Datasets for Deep Data-Driven Reinforcement Learning",
+      "authors": "Justin Fu, Aviral Kumar, Ofir Nachum, George Tucker, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/17aksC2KVYeVL-EYxa7vxPSMXRFfhwNUH/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://youtu.be/mHGXOhLHC2Q"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "AVID: Learning Multi-Stage Tasks via Pixel-Level Translation of Human Videos",
+      "authors": "Laura Smith, Nikita Dhawan, Marvin Zhang, Pieter Abbeel, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://sites.google.com/view/rss20avid"
+       ],
+       [
+        "video",
+        "https://youtu.be/Xt1BTvSdg8I"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Value Variance Minimization for Learning Approximate Equilibrium in Stochastic Congestion Games",
+      "authors": "Tanvi Verma, Pradeep Varakantham",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1YTCDDBiiRgTWjhzYoLh7BJvcwyrqnsRp/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://drive.google.com/file/d/1PeO1nMkF4Tgwggl9LG6V1t_S224_1MbQ/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Incentive Based Learning for Improving Effectiveness of Aggregation Systems",
+      "authors": "Tanvi Verma, Pradeep Varakantham",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1xnunLBJByihnXutw-VNFbnTX9liib-c8/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://drive.google.com/file/d/15iwmUbX7SEdoPBdjJat2j0z_L66BOwct/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "AgentGraph: Towards Universal Dialogue Management with Structured Deep Reinforcement Learning",
+      "authors": "Lu Chen, Zhi Chen, Bowen Tan, Sishan Long, Milica Gasic, Kai Yu",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/pdf/1905.11259.pdf"
+       ],
+       [
+        "video",
+        "https://youtu.be/ysIzcucjNIo"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Planning and Execution using Inaccurate Models with Provable Guarantees",
+      "authors": "Anirudh Vemula, Yash Oza, J. Andrew Bagnell, Maxim Likhachev",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2003.04394"
+       ],
+       [
+        "video",
+        "https://youtu.be/WTt4IQajAYk"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Enabling Safe Exploration of Action Space in Real--World Robots",
+      "authors": "Shivam Garg, Homayoon Farrahi, A.Rupam Mahmood",
+      "links": [
+       [
+        "paper",
+        "https://svmgrg.github.io/documents/Safe_Exploration_RL4RealLife_2020.pdf"
+       ],
+       [
+        "video",
+        "https://youtu.be/RZaeMIKVqik"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reward Design for Driver Repositioning Using Multi-Agent Reinforcement Learning",
+      "authors": "Zhenyu Shou, Xuan Di",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2002.06723"
+       ],
+       [
+        "video",
+        "https://youtu.be/Msw94vyp4x0"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Sparsity-Agnostic Lasso Bandit",
+      "authors": "Min-hwan Oh, Garud Iyengar, Assaf Zeevi",
+      "links": [
+       [
+        "paper",
+        "http://www.columbia.edu/~mo2499/papers/Sparsity_Agnostic_Lasso_Bandit.pdf"
+       ],
+       [
+        "video",
+        "https://drive.google.com/file/d/1uEsUdOl7OY32zdJlmXqZebDyIhM-rrGQ/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Variance Reduction for Evolutionary Strategies via Structured Control Variate",
+      "authors": "Yunhao Tang, Krzysztof Choromanski, Alp Kucukelbir",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/1906.08868"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning for Integer Programming: Learning to Cut",
+      "authors": "Yunhao Tang, Shipra Agrawal, Yuri Faenza",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/pdf/1906.04859.pdf"
+       ],
+       [
+        "video",
+        "https://youtu.be/1NjBIdcBB0w"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Delay-Correcting Reinforcement Learning",
+      "authors": "Yann Bouteiller*, Simon Ramstedt*, Giovanni Beltrame, Christopher Pal, Jonathan Binas",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/15O8uv-8-HveJ7lI6_Oz1lMk_3x01gH2p/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://drive.google.com/file/d/1FYRCPoig4qYeBkEp_j49kXgdfSANMyXV/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Long-Horizon Visual Planning with Goal-Conditioned Hierarchical Predictors",
+      "authors": "Karl Pertsch*, Oleh Rybkin*, Frederik Ebert, Chelsea Finn, Dinesh Jayaraman, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://orybkin.github.io/video-gcp/"
+       ],
+       [
+        "video",
+        "https://www.youtube.com/watch?time_continue=1&v=axXx-x86IeY&feature=emb_logo"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Treatment Effect Information Transfer from Well Curated to Less Resourced Populations with HIV",
+      "authors": "Sonali Parbhoo, Mario Wieser, Volker Roth, Finale Doshi-Velez",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1galNj8jstji2-v5ebQ5qQoZMMTNYTSkm/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://drive.google.com/file/d/1Y0K5R6N2n6NvNszd35CCQf-kBT-crQcz/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Visual Transfer for Reinforcement Learning via Wasserstein Domain Confusion",
+      "authors": "Josh Roy, George Konidaris",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/pdf/2006.03465.pdf"
+       ],
+       [
+        "video",
+        "https://youtu.be/i9zY35Sz6S0"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning to Dock Robustly",
+      "authors": "Mohamed Elsayed, Hager Radi, A. Rupam Mahmood",
+      "links": [
+       [
+        "video",
+        "https://youtu.be/tlcAqwpxJUQ"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Efficient Adaptation for End-to-End Vision-Based Robotic Manipulation",
+      "authors": "Ryan Julian, Benjamin Swanson, Gaurav Sukhatme, Sergey Levine, Chelsea Finn, Karol Hausman",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2004.10190"
+       ],
+       [
+        "video",
+        "https://www.youtube.com/watch?v=pPDVewcSpdc&feature=emb_title"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "An Empirical Investigation of the Challenges of Real World Reinforcement Learning",
+      "authors": "Gabriel Dulac-Arnold, Nir Levine, Daniel J. Mankowitz, Cosmin Paduraru, Sven Gowal, Jerry Li, Todd Hester",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2003.11881"
+       ],
+       [
+        "video",
+        "https://youtu.be/1d6bD084-hY"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Student-teacher curriculum learning via reinforcement learning: Inpatient Hospital Admission Prediction",
+      "authors": "Rasheed el-Bouri, David Eyre, Peter Watkinson, Tingting Zhu, David Clifton",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/12FIuP8Me4nPvBOCmTe1hj7-KyMPSTpHX/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://slideslive.com/38931272"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Conservative Q-learning for Offline Reinforcement Learning",
+      "authors": "Aviral Kumar, Aurick Zhou, George Tucker, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2006.04779"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Latent State Models for Meta-Reinforcement Learning",
+      "authors": "Anusha Nagabandi*, Tony Zhao*, Kate Rakelly*, Chelsea Finn, Sergey Levine",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1rg0_7mpaPhJmNm0DlhOA4tQv9mLDl9zH/view?usp=sharing"
+       ],
+       [
+        "video",
+        "http://www.betr-rl.ml/2020/abs/9/"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "RL Unplugged: Benchmarks for Offline Reinforcement Learning",
+      "authors": "Caglar Gulcehre*, Ziyu Wang*, Alexander Novikov*, Tom Le Paine*, Sergio Gómez Colmenarejo, Konrad Zolna, Rishabh Agarwal, Josh Merel, Daniel Mankowitz, Cosmin Paduraru, Gabriel Dulac-Arnold, Jerry Li, Mohammad Norouzi, Matt Hoffman, Ofir Nachum, George Tucker, Nicolas Heess and Nando de Freitas",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1p-5ktaax6kufHiuejjoKwZTOjcs0tc5v/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://youtu.be/Bli-YPjXf94"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Intrinsic Reward Driven Imitation Learning via Generative Model",
+      "authors": "Xingrui Yu, Yueming Lyu and Ivor W. Tsang",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1EhNydJSzyqU8K-AVRTz3ED9uZZcdDD7y/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://drive.google.com/file/d/1gIE9igNW-UnzFb1JMR3xEgC6qldg-hSi/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning to Run a Power Network: bringing AI to power grid control",
+      "authors": "Benjamin Donnot, Antoine Marot, Isabelle Guyon",
+      "links": [
+       [
+        "paper",
+        "https://docs.google.com/presentation/d/1SB5NiRB3rqcM4YglSWwkA94NROTrFG2Z_57J91_jxzc/edit?usp=sharing"
+       ],
+       [
+        "video",
+        "https://youtu.be/fIHIDFISf9E"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Automation of the Fresh Food Supply Chain Using Model-Based Planning",
+      "authors": "Harlan Seymour, Andy Chen, Philip Cerles, Sawyer Birnbaum, Siddarth Sampangi, Danny Nemer, Volodymyr Kuleshov",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/12sZJGQ9krM97H1rC8q2cl0BRiVmpNeI9/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Interpretable Off-Policy Evaluation in Reinforcement Learning by Highlighting Influential Transitions",
+      "authors": "Omer Gottesman, Joseph Futoma, Yao Liu, Sonali Parbhoo, Leo Anthony Celi, Emma Brunskill, Finale Doshi-Velez",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/11Kn9rEXqCHeR67B2rcoMYcaME5P2wsIN/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://drive.google.com/file/d/1x5b2d-Z1RmXoLVks4_xQ66A0Acf_NkH-/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Planning to Explore via Self-Supervised World Models",
+      "authors": "Ramanan Sekar*, Oleh Rybkin*, Kostas Daniilidis, Pieter Abbeel, Danijar Hafner, Deepak Pathak",
+      "links": [
+       [
+        "paper",
+        "https://ramanans1.github.io/plan2explore/"
+       ],
+       [
+        "video",
+        "https://www.youtube.com/watch?v=GyEzjW1m7kU"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   }
+  ],
+  "comm": [
+   [
+    "Slack Workspace for RL for Real Life",
+    "https://join.slack.com/t/rl4reallife/shared_invite/zt-870hb7ma-zcqodv8t0S9X5DclHh08Yw"
+   ],
+   [
+    "yuxili@gmail.com",
+    "mailto:yuxili@gmail.com"
+   ],
+   [
+    "Twitter: #RL4RealLife",
+    null
+   ]
+  ],
+  "chairs": [
+   {
+    "name": "Gabriel Dulac-Arnold",
+    "aff": "Google Research",
+    "url": "http://gabe.squirrelsoup.net",
+    "photo": "assets/people/gabriel-dulac-arnold.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Alborz Geramifard",
+    "aff": "Facebook AI",
+    "url": "https://alborz-geramifard.com/",
+    "photo": "assets/people/alborz-geramifard.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Omer Gottesman",
+    "aff": "Harvard",
+    "url": "https://scholar.google.com/citations?user=glNJx5zYUbsC&hl=en",
+    "photo": "assets/people/omer-gottesman.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Lihong Li",
+    "aff": "Google Research",
+    "url": "https://lihongli.github.io",
+    "photo": "assets/people/lihong-li.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Yuxi Li",
+    "aff": "",
+    "url": "http://attain.ai",
+    "photo": "assets/people/yuxi-li.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Anusha Nagabandi",
+    "aff": "UC Berkeley & Google",
+    "url": "https://people.eecs.berkeley.edu/~nagaban2/",
+    "photo": "assets/people/anusha-nagabandi.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Zhiwei (Tony) Qin",
+    "aff": "Didi",
+    "url": "http://tonyzqin.wordpress.com",
+    "photo": "assets/people/zhiwei-tony-qin.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Csaba Szepesvari",
+    "aff": "DeepMind & University of Alberta",
+    "url": "https://sites.ualberta.ca/~szepesva/",
+    "photo": "assets/people/csaba-szepesvari.png",
+    "role": "",
+    "links": []
+   }
+  ],
+  "pc": [],
+  "talks": [],
+  "previous": [
+   [
+    "Reinforcement Learning for Real Life Workshop at ICML 2019",
+    "2019.html"
+   ]
+  ],
+  "venue_image": "assets/venues/2020.jpg",
+  "venue_credit": {},
+  "venue_focus": "center 45%"
+ },
+ "2021": {
+  "year": 2021,
+  "edition": "3rd",
+  "conf": "ICML 2021",
+  "date": "July 23, 2021",
+  "city": "Online",
+  "location": "Virtual workshop at ICML 2021",
+  "location_url": "https://icml.cc/virtual/2021/workshop/8354",
+  "mode": "Virtual",
+  "intro": [
+   "Reinforcement learning (RL) is a general learning, predicting, and decision making paradigm and applies broadly in many disciplines, including science, engineering and humanities. RL has seen prominent successes in many problems, such as Atari games, AlphaGo, robotics, recommender systems, and AutoML. However, applying RL in the real world remains challenging, and a natural question is:",
+   "Why isn’t RL used even more often and how can we improve this?"
+  ],
+  "top_links": [
+   [
+    "ICML 2021 workshop page (videos)",
+    "https://icml.cc/virtual/2021/workshop/8354"
+   ],
+   [
+    "Slack workspace",
+    "https://join.slack.com/t/rl4reallife/shared_invite/zt-870ehl9e-N~ke75JWIzAYLUrJ3R0ZMg"
+   ],
+   [
+    "Machine Learning Journal special issue (2nd)",
+    "https://link.springer.com/collections/bifgfddgff"
+   ]
+  ],
+  "schedule": [
+   {
+    "time": "9:00-11:00",
+    "what": "Poster Session",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "11:00-12:00",
+    "what": "RL Foundation Panel",
+    "links": [
+     [
+      "video",
+      "https://slideslive.com/38964689/rl-foundation-panel"
+     ]
+    ],
+    "brk": false
+   },
+   {
+    "time": "12:00-13:00",
+    "what": "RL Explainability &amp; Interpretability Panel",
+    "links": [
+     [
+      "video",
+      "https://slideslive.com/38964690/rl-explainability-interpretability-panel"
+     ]
+    ],
+    "brk": false
+   },
+   {
+    "time": "13:00-14:00",
+    "what": "RL + Robotics Panel",
+    "links": [
+     [
+      "video",
+      "https://slideslive.com/38964691/rl-robotics-panel"
+     ]
+    ],
+    "brk": false
+   },
+   {
+    "time": "14:00-18:00",
+    "what": "Break",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "18:00-19:00",
+    "what": "RL + Recommender Systems Panel",
+    "links": [
+     [
+      "video",
+      "https://slideslive.com/38964692/rl-recommender-systems-panel"
+     ]
+    ],
+    "brk": false
+   },
+   {
+    "time": "19:00-20:00",
+    "what": "Spotlight",
+    "links": [
+     [
+      "video",
+      "https://slideslive.com/38964693/spotlight"
+     ]
+    ],
+    "brk": false
+   },
+   {
+    "time": "20:00-21:00",
+    "what": "RL Research-to-RealLife Gap Panel",
+    "links": [
+     [
+      "video",
+      "https://slideslive.com/38964694/rl-researchtoreallife-gap-panel"
+     ]
+    ],
+    "brk": false
+   },
+   {
+    "time": "21:00-22:00",
+    "what": "Break",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "22:00-23:00",
+    "what": "RL + OR Panel",
+    "links": [
+     [
+      "video",
+      "https://slideslive.com/38964695/rl-operations-research-panel"
+     ]
+    ],
+    "brk": false
+   },
+   {
+    "time": "23:00-1:00",
+    "what": "Poster Session",
+    "links": [],
+    "brk": true
+   }
+  ],
+  "panels": [
+   {
+    "name": "RL Foundation Panel",
+    "chairs": "Co-Chairs: Csaba Szepesvari, Lihong Li and Yuxi Li",
+    "video": "https://slideslive.com/38964689/rl-foundation-panel",
+    "ask": "http://www.tricider.com/brainstorming/2sca6QniPtp",
+    "members": [
+     {
+      "name": "Matthew Botvinick",
+      "aff": "DeepMind",
+      "url": "https://scholar.google.com/citations?user=eM916YMAAAAJ&hl=en",
+      "photo": "assets/people/matthew-botvinick.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=H4Sux8Q89cg"
+       ],
+       [
+        "more",
+        "https://www.youtube.com/watch?v=FIFbEadQnBo"
+       ]
+      ]
+     },
+     {
+      "name": "Thomas Dietterich",
+      "aff": "Oregon State University",
+      "url": "https://scholar.google.com/citations?user=09kJn28AAAAJ&hl=en",
+      "photo": "assets/people/thomas-dietterich.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=9zH--IngYCQ"
+       ],
+       [
+        "more",
+        "https://www.youtube.com/watch?v=0UKLcBSpTR4"
+       ]
+      ]
+     },
+     {
+      "name": "Leslie Pack Kaelbling",
+      "aff": "MIT",
+      "url": "https://scholar.google.com/citations?user=IcasIiwAAAAJ&hl=en",
+      "photo": "assets/people/leslie-pack-kaelbling.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=5R-xL9YmdR0"
+       ]
+      ]
+     },
+     {
+      "name": "John Langford",
+      "aff": "Microsoft",
+      "url": "https://scholar.google.com/citations?user=LFiqVpwAAAAJ&hl=en",
+      "photo": "assets/people/john-langford.png",
+      "role": "Moderator",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=_-aeyeBYz1s"
+       ],
+       [
+        "more",
+        "https://www.youtube.com/watch?v=zr6H4kR8vTg"
+       ]
+      ]
+     },
+     {
+      "name": "Warren Powell",
+      "aff": "Princeton / Optimal Dynamics",
+      "url": "https://scholar.google.com/citations?user=vDw80QEAAAAJ&hl=en",
+      "photo": "assets/people/warren-powell.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://youtu.be/8eOaTEq3_AA"
+       ],
+       [
+        "more",
+        "https://www.youtube.com/watch?v=kFHCVXrEw4Q"
+       ],
+       [
+        "more",
+        "https://www.youtube.com/watch?v=5iCJLnBuTSo"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "name": "RL Research-to-RealLife Gap Panel",
+    "chairs": "Co-Chairs/Moderators: Matthew E. Taylor and Kathryn Hume",
+    "video": "https://slideslive.com/38964694/rl-researchtoreallife-gap-panel",
+    "ask": "http://www.tricider.com/brainstorming/3JA3tVNrYBp",
+    "members": [
+     {
+      "name": "Hasham Burhani",
+      "aff": "RBC Capital Markets",
+      "url": "https://www.linkedin.com/in/hasham-burhani-a500b055/?originalSubdomain=ca",
+      "photo": "assets/people/hasham-burhani.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Craig Buhr",
+      "aff": "MathWorks",
+      "url": "https://www.linkedin.com/in/craig-buhr-2ba3882/",
+      "photo": "assets/people/craig-buhr.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Jeff Mendenhall",
+      "aff": "Microsoft",
+      "url": "https://www.linkedin.com/in/jeffmendenhall/",
+      "photo": "assets/people/jeff-mendenhall.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Yang Yu",
+      "aff": "Polixir.ai / Nanjing University",
+      "url": "https://scholar.google.com/citations?user=PG2lDSwAAAAJ&hl=en",
+      "photo": "assets/people/yang-yu.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Kathryn Hume",
+      "aff": "Borealis AI",
+      "url": "https://www.linkedin.com/in/khume/",
+      "photo": "assets/people/kathryn-hume.png",
+      "role": "Co-Chair",
+      "links": []
+     }
+    ]
+   },
+   {
+    "name": "RL + Recommender Systems Panel",
+    "chairs": "Co-Chairs/Moderators: Minmin Chen and Lihong Li",
+    "video": "https://slideslive.com/38964692/rl-recommender-systems-panel",
+    "ask": "http://www.tricider.com/brainstorming/2mmod1j4APh",
+    "members": [
+     {
+      "name": "Alekh Agarwal",
+      "aff": "Microsoft",
+      "url": "https://scholar.google.com/citations?user=9nnDvooAAAAJ&hl=en",
+      "photo": "assets/people/alekh-agarwal.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=A6wNJ4-MpIg"
+       ],
+       [
+        "more",
+        "https://www.youtube.com/watch?v=A6wNJ4-MpIg"
+       ]
+      ]
+     },
+     {
+      "name": "Ed Chi",
+      "aff": "Google",
+      "url": "https://scholar.google.com/citations?user=VuWl-KUAAAAJ&hl=en",
+      "photo": "assets/people/ed-chi.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Maria Dimakopoulou",
+      "aff": "Netflix",
+      "url": "https://scholar.google.com/citations?user=ySLrpsYAAAAJ&hl=en",
+      "photo": "assets/people/maria-dimakopoulou.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=hnxHr1fD8uY"
+       ]
+      ]
+     },
+     {
+      "name": "Georgios Theocharous",
+      "aff": "Adobe",
+      "url": "https://scholar.google.com/citations?user=MPA6BekAAAAJ&hl=en",
+      "photo": "assets/people/georgios-theocharous.png",
+      "role": "",
+      "links": [
+       [
+        "paper",
+        "https://arxiv.org/abs/2009.07346"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "name": "RL + Robotics Panel",
+    "chairs": "Chair/Moderator: Rupam Mahmood",
+    "video": "https://slideslive.com/38964691/rl-robotics-panel",
+    "ask": "http://www.tricider.com/brainstorming/3P1ZS0Di0at",
+    "members": [
+     {
+      "name": "George Konidaris",
+      "aff": "Brown",
+      "url": "https://scholar.google.com/citations?user=9UERvVEAAAAJ&hl=en",
+      "photo": "assets/people/george-konidaris.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=sPhJsH8mlMc"
+       ]
+      ]
+     },
+     {
+      "name": "Martin Riedmiller",
+      "aff": "DeepMind",
+      "url": "https://scholar.google.com/citations?user=1gVfqpcAAAAJ&hl=en",
+      "photo": "assets/people/martin-riedmiller.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=HIdI6gCQvTQ"
+       ]
+      ]
+     },
+     {
+      "name": "Angela Schoellig",
+      "aff": "University of Toronto",
+      "url": "https://scholar.google.com/citations?user=QMfeRz0AAAAJ&hl=en",
+      "photo": "assets/people/angela-schoellig.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=3y7K-yL1fBU"
+       ]
+      ]
+     },
+     {
+      "name": "Rose Yu",
+      "aff": "UC San Diego",
+      "url": "https://scholar.google.com/citations?user=4HTITaMAAAAJ&hl=en",
+      "photo": "assets/people/rose-yu.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=3iNVnHQ1d9g"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "name": "RL Explainability & Interpretability Panel",
+    "chairs": "Co-Chairs/Moderators: Omer Gottesman and Niranjani Prasad",
+    "video": "https://slideslive.com/38964690/rl-explainability-interpretability-panel",
+    "ask": "http://www.tricider.com/brainstorming/3Qie0mFs5kF",
+    "members": [
+     {
+      "name": "Ofra Amir",
+      "aff": "Technion",
+      "url": "https://scholar.google.com/citations?user=WS5b_koAAAAJ&hl=en",
+      "photo": "assets/people/ofra-amir.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=j-NxTvEDexg"
+       ]
+      ]
+     },
+     {
+      "name": "Finale Doshi-Velez",
+      "aff": "Harvard",
+      "url": "https://scholar.google.com/citations?user=hwQtFB0AAAAJ&hl=en",
+      "photo": "assets/people/finale-doshi-velez.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=2JS-6IpGjMg"
+       ]
+      ]
+     },
+     {
+      "name": "Alan Fern",
+      "aff": "Oregon State University",
+      "url": "https://scholar.google.com/citations?user=GaKxFrcAAAAJ&hl=en&oi=ao",
+      "photo": "assets/people/alan-fern.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://rl4reallife.slack.com/archives/C020JV24U3C/p1626710475001600"
+       ]
+      ]
+     },
+     {
+      "name": "Zachary C. Lipton",
+      "aff": "Carnegie Mellon University",
+      "url": "https://scholar.google.com/citations?user=MN9Kfg8AAAAJ&hl=en&oi=ao",
+      "photo": "assets/people/zachary-c-lipton.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=NWkicrRTupo&ab_channel=InstituteforPure%26AppliedMathematics%28IPAM%29"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "name": "RL + Operations Research Panel",
+    "chairs": "Co-Chairs: Zhiwei (Tony) Qin and Zongqing Lu (Moderator)",
+    "video": "https://slideslive.com/38964695/rl-operations-research-panel",
+    "ask": "http://www.tricider.com/brainstorming/3E5HWMMNSJp",
+    "members": [
+     {
+      "name": "Jim Dai",
+      "aff": "Cornell / CUHK-Shenzhen",
+      "url": "https://scholar.google.com/citations?user=HnO4jIMAAAAJ&hl=en",
+      "photo": "assets/people/jim-dai.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://psu.zoom.us/rec/play/fxE93bBuh-TiAjbtmy8TiJRBdo_HfhDF6wtepcN63xNI4DZd0Kza7z3vMwjJLO_rVMsa9qwlN6HTkYla.jnUFmuw7PHT0zi4U?startTime=1601045058000&_x_zm_rtaid=uTGDjhTXTwKE-zWiVjohEg.1626573340182.476a1d5c0bd95a3521f2e7bb95e570e8&_x_zm_rhtaid=97"
+       ]
+      ]
+     },
+     {
+      "name": "Fei Fang",
+      "aff": "Carnegie Mellon University",
+      "url": "https://scholar.google.com/citations?user=R6jE0VEAAAAJ&hl=en",
+      "photo": "assets/people/fei-fang.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=tl62LUA4TdA"
+       ]
+      ]
+     },
+     {
+      "name": "Shie Mannor",
+      "aff": "Technion & NVIDIA Research",
+      "url": "https://scholar.google.com/citations?user=q1HlbIUAAAAJ&hl=en",
+      "photo": "assets/people/shie-mannor.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=2uZmC9F4Fbo"
+       ]
+      ]
+     },
+     {
+      "name": "Yuandong Tian",
+      "aff": "Facebook AI Research",
+      "url": "https://scholar.google.com/citations?user=0mgEF28AAAAJ&hl=en",
+      "photo": "assets/people/yuandong-tian.png",
+      "role": "",
+      "links": [
+       [
+        "video",
+        "https://www.youtube.com/watch?v=sH4a2a0ntUA"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "panels_intro": "We will request invited panelists/moderators to share their expertise w.r.t. the real life aspects of RL by pre-recording videos. The moderators will host live panel discussions, and there will be polls for audience to submit questions.",
+  "poster_specs": "The poster specs for ICML 2021 main conference: in .png format with a max size of 5120 x 2880, with an optional thumbnail image of size 320 x 256.",
+  "paper_groups": [
+   {
+    "title": "Accepted papers",
+    "papers": [
+     {
+      "title": "DeepThermal: Combustion Optimization for Thermal Power Generating Units Using Offline Reinforcement Learning",
+      "authors": "Xianyuan Zhan (JD Intelligent Cities Research); Haoran Xu (Xidian University); Yue Zhang (JD Intelligent Cities Research); Xiangyu Zhu (JD Intelligent Cities Research); Honglei Yin (JD Intelligent Cities Research)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1QFoVqYLFiCijl5q6rhEg-ZGtExbv41oh/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Neural Rate Control for Video Encoding using Imitation Learning",
+      "authors": "Hongzi Mao (MIT CSAIL); Chenjie Gu (Deepmind); Miaosen Wang (Google); Angie Chen (Google); Nevena Lazic (DeepMind); Nir Levine (Deepmind); Derek Pang (Google); Rene Claus (Google); Marisabel Hechtman‎ (Google); Ching-Han Chiang (Google Inc.); Cheng Chen (Google Inc.); Jingning Han (Google Inc.)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1TYIob_0MJPtkCVmC8Frm3vMdYw1xEZSA/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning for (Mixed) Integer Programming: Smart Feasibility Pump",
+      "authors": "Mengxin Wang (University of California, Berkeley); Meng Qi (University of California, Berkeley); Zuo-Jun Shen (University of California, Berkeley)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/15kkVaMd13AteWYwIFVs1iopnhvBjJTg2/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Continuous Doubly Constrained Batch Reinforcement Learning",
+      "authors": "Rasool Fakoor (Amazon); Jonas Mueller (AWS); Kavosh Asadi (Brown University); Pratik Chaudhari (University of Pennsylvania); Alex J Smola (Amazon)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1-CyK2LCVnWtbrfgJ2Tzl2tn5kgkRrDGB/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Contingency-Aware Influence Maximization: A Reinforcement Learning Approach",
+      "authors": "Haipeng Chen (Harvard University); Wei Qiu (Nanyang Technological University); Han-Ching Ou (Harvard University); Bo An (Nanyang Technological University); Milind Tambe (Harvard University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1LGfLzMx_9MpJ-8PrF9ZFADSvaulNvUPr/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "On the Difficulty of Generalizing Reinforcement Learning Framework for Combinatorial Optimization",
+      "authors": "Mostafa Pashazadeh (University of Victoria); Kui Wu (University of Victoria)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1LXIhiLU6QQ3xmZCkvgzChK73iLg2z5Ue/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model",
+      "authors": "Haruka Kiyohara (Tokyo Institute of Technology); Yuta Saito (Hanjuku-kaso, Co., Ltd.); Tatsuya Matsuhiro (Yahoo Japan Corporation); Yusuke Narita (Yale University); Nobuyuki Shimizu (Yahoo Japan Corporation); Yasuo Yamamoto (Yahoo! Japan)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1FR-hRki51gvusn0prOD53u4tKiYMA0mx/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "OffWorld Gym: Open-Access Physical Robotics Environment for Real-World Reinforcement Learning Benchmark and Research",
+      "authors": "Ashish Kumar (OffWorld Inc); Toby Buckley (Offworld Inc.); John Lanier (OffWorld, Inc.); Qiaozhi Wang (OffWorld, Inc.); Alicia Kavelaars (OffWorld Inc.); Ilya Kuzovkin (Offworld Inc.)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1zFOzeDHLWQgQN2aMHNXWcx1IF4UHW9sA/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning Barrier Certificates: Towards Safe Reinforcement Learning with Zero Training-time Violations",
+      "authors": "Yuping Luo (Princeton University); Tengyu Ma (Stanford)",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "Automatic Risk Adaptation in Distributional Reinforcement Learning",
+      "authors": "Frederik Schubert (Leibniz University Hannover); Theresa Eimer (Leibniz University Hannover); Bodo Rosenhahn (Leibniz University Hannover); Marius Lindauer (Leibniz University Hannover)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1veyrd0ec_KlHEVnnYKBVegoAN-SiDQTO/view?usp=sharing"
+       ],
+       [
+        "appendix",
+        "https://drive.google.com/file/d/1Qnf3mn1fHmVlg8mthhTCA6Po2x58dTDx/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Coordinate-wise Control Variates for Deep Policy Gradients",
+      "authors": "Yuanyi Zhong (University of Illinois at Urbana-Champaign); Yuan Zhou (UIUC); Jian Peng (University of Illinois at Urbana-Champaign)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1IsipzP_11Oz_e0YMv2PQXEkxDo9waCZB/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Disentangled Attention as Intrinsic Regularization for Bimanual Multi-Object Manipulation",
+      "authors": "Minghao Zhang (Tsinghua University); Pingcheng Jian (Tsinghua University); Yi Wu (Tsinghua University); Huazhe Xu (UC Berkeley); Xiaolong Wang (UCSD)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1AtLJIx64xrmIP2vbI-N20CJ_OOPZUMWQ/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning Vision-Guided Quadrupedal Locomotion End-to-End with Cross-Modal Transformers",
+      "authors": "Ruihan Yang (UC San Diego); Minghao Zhang (Tsinghua University); Nicklas A Hansen (UC San Diego); Huazhe Xu (UC Berkeley); Xiaolong Wang (UCSD)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1rP4V6yTilZ8IbN_OmQwLML6hbB6zmD6p/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems",
+      "authors": "Daniele Gammelli (Technical University of Denmark (DTU)); Kaidi Yang (Stanford University); James Harrison (Stanford University); Filipe Rodrigues (Technical University of Denmark (DTU)); Francisco Pereira (DTU); Marco Pavone (Stanford University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/11niJsxs8V9sNWzQ2Ydk_yVVEvjcPSc1Q/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://youtu.be/Nr8MHEeYJUI"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reward-Free Attacks in Multi-Agent Reinforcement Learning",
+      "authors": "Ted Fujimoto (Pacific Northwest National Laboratory); Timothy Doster (Pacific Northwest National Laboratory); Adam Attarian (PNNL); Jill M Brandenberger (PNNL); Nathan Hodas (Pacific Northwest National Lab)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1P14VW1ePHY2AzsXnN-KqeLN3tzZVM4kj/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Evaluating the progress of Deep Reinforcement Learning in the real world: aligning domain-agnostic and domain-specific research",
+      "authors": "Juan Jose Garau Luis (MIT); Edward Crawley (MIT); Bruce Cameron (MIT)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1fEDuXTz6PbITro3Z7VryOIm3GbOzOCrh/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Corruption Robust Offline Reinforcement Learning",
+      "authors": "Xuezhou Zhang (UW-Madison); Yiding Chen (University of Wisconsin-Madison); Xiaojin Zhu (University of Wisconsin-Madison); Wen Sun (Cornell University)",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "Deep Reinforcement Learning for 3D Furniture Layout in Indoor Graphic Scenes",
+      "authors": "XINHAN DI (Deepearthgo); Pengqian Yu (Sea AI Lab)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1tn7y30soz3n53sEjZdE09RBxhxCuotPv/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning to Represent State with Perceptual Schemata",
+      "authors": "Wilka Carvalho (University of Michigan); Murray P Shanahan (DeepMind Technologies Ltd)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1cuJdwtFVTbl9O0Gj40mjEz-PRceDwut6/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Continual Meta Policy Search for Sequential Multi-Task Learning",
+      "authors": "Glen Berseth (University of California Berkeley); Zhiwei Zhang (Uc Berkeley)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1q6JE7dt7Ju-xt4xRMu2_dLCMLwYC0-yF/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning as One Big Sequence Modeling Problem",
+      "authors": "Michael Janner (UC Berkeley); Qiyang Li (University of California, Berkeley); Sergey Levine (UC Berkeley)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1AKLmnAa8NQWJnaLuPa3d_Qz1QLeAw3EP/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Of Moments and Matching: A Game-Theoretic Framework for Closing the Imitation Gap",
+      "authors": "Gokul Swamy (Carnegie Mellon University); Sanjiban Choudhury (Aurora Innovation); J. Andrew Bagnell (Aurora Innovation); Steven Wu (Carnegie Mellon University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1ghGWzB2nxfQYXQnVLdLjcUFMhQiosvtR/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://www.youtube.com/watch?v=srhPFS77oSs"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning Space Partitions for Path Planning",
+      "authors": "Kevin Yang (UC Berkeley); Tianjun Zhang (UC Berkeley); Chris Cummins (Facebook AI Research); Brandon Cui (Facebook AI Research); Benoit Steiner (Facebook AI Research); linnan wang (brown); Joey Gonzalez (Berkeley); Dan Klein (University of California, Berkeley); Yuandong Tian (Facebook)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1xNjcBY6XNoSsiB8oTqjLQ4nmrav_ZGjl/view?usp=sharing"
+       ],
+       [
+        "appendix",
+        "https://drive.google.com/file/d/1EAppqQsYYo3F419TVpancn1jj-QBuzY3/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "ReLMM: Practical RL for Learning Mobile Manipulation Skills Using Only Onboard Sensors",
+      "authors": "Charles J Sun (UC Berkeley); Jedrzej Orbik (UC Berkeley); Coline Devin (UC Berkeley); Abhishek Gupta (UC Berkeley); Glen Berseth (University of California Berkeley); Sergey Levine (UC Berkeley)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1wK_QwuQYbnDN7yZzYGwlOhhXVABQP2d_/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Representation Learning for Out-of-distribution Generalization in Downstream Tasks",
+      "authors": "Frederik Träuble (MPI for Intelligent Systems); Andrea Dittadi (Technical University of Denmark); Manuel Wüthrich (MPI for Intelligent Systems); Felix Widmaier (MPI for Intelligent Systems, Tübingen); Peter Gehler (Amazon); Ole Winther (DTU and KU); Francesco Locatello (Amazon); Olivier Bachem (Google Brain); Bernhard Schölkopf (MPI for Intelligent Systems, Tübingen); Stefan Bauer (Max Planck institute)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1p7ud9uaHg0Ju6Wb02K_4PJMGNHadLdrt/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Symbolic Relational Deep Reinforcement Learning based on Graph Neural Networks",
+      "authors": "Jaromír Janisch (Czech Technical University in Prague); Tomas Pevny (Czech Technical University in Prague); Viliam Lisy (Czech Technical University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/15ThfxP2_9RIxDvA_aGjiX3chpmXaeOLN/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Hierarchical Multiple-Instance Data Classification with Costly Features",
+      "authors": "Jaromír Janisch (Czech Technical University in Prague); Tomas Pevny (Czech Technical University in Prague); Viliam Lisy (Czech Technical University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1YKS3FK_3xKljNDVVkq2N6nbBLqqzRYEi/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Multi-agent Deep Covering Option Discovery",
+      "authors": "Jiayu Chen (Purdue University); Marina W Haliem (Purdue University); Tian Lan (The George Washington University); Vaneet Aggarwal (Purdue University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1xaCoCTIBDbFlVQoi654NwxuYDzvpKjK4/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Efficient Exploration by HyperDQN in Deep Reinforcement Learning",
+      "authors": "Ziniu Li (The Chinese University of Hong Kong, Shenzhen); Yingru Li (The Chinese University of Hong Kong, Shenzhen); Hao Liang (The Chinese University of Hongkong, Shenzhen); Tong Zhang (The Hong Kong University of Science and Technology)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1nKXc4NA2_d35lnrHpkx-5FEudCRppIip/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Revisiting Design Choices in Offline Model Based Reinforcement Learning",
+      "authors": "Cong Lu (University of Oxford); Philip J Ball (University of Oxford); Jack Parker-Holder (University of Oxford); Michael A. Osborne (University of Oxford); Stephen Roberts (Oxford)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1qQDeG-nQ5-XqARssY3X2YAAFwp8_n2Nq/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "De novo drug design using reinforcement learning with graph-based deep generative models",
+      "authors": "Sara Romeo Atance (Chalmers University of Technology); Juan Viguera Diez (Chalmers University of Technology); Ola Engkvist (AstraZeneca AB); Simon Olsson (Chalmers University of Technology); Rocío Mercado (AstraZeneca)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/159Ho3ju-80_fQu0hZatA20DZeFwcFoqX/view?usp=sharing"
+       ],
+       [
+        "appendix",
+        "https://drive.google.com/file/d/1RrvyMnJ4PEO_kZBWYvy8O7Fj0bcfOBOj/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Optimization of high precision manufacturing by Monte Carlo Tree Search",
+      "authors": "Dorina Weichert (Fraunhofer IAIS); Felix Horchler (Bonn University); Alexander Kister (Fraunhofer IAIS); Marcus Trost (Fraunhofer IOF); Johannes Hartung (Fraunhofer IOF); Stefan Risse (Fraunhofer IOF)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1BuKQPuAXp50MFddhnSDzjerb4-u9m8dS/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Designing Online Advertisements via Bandit and Reinforcement Learning",
+      "authors": "Richard Liu (Yale University); Yusuke Narita (Yale University); Kohei Yata (Yale University); Shota Yasui (Cyberagent)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1bj7GJnzwq3UZQLoGnsDuNlK94c_eNYED/view?usp=sharing"
+       ],
+       [
+        "appendix",
+        "https://drive.google.com/file/d/1FNpPYoUwnGHuuKs9T-AYKqOkaRYXQlK2/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Semantic Tracklets: An Object-Centric Representation for Visual Multi-Agent Reinforcement Learning",
+      "authors": "Iou-Jen Liu (University of Illinois at Urbana-Champaign); Zhongzheng Ren (UIUC); Raymond A Yeh (UIUC); Alexander Schwing (UIUC)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1BCJFQkpUbmJhTcOR5l8296vXwYpQ3Qn6/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Model Selection for Offline Reinforcement Learning: Practical Considerations for Healthcare Settings",
+      "authors": "Shengpu Tang (University of Michigan); Jenna Wiens (University of Michigan)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1lMLos_ug7wHj3iaur4Go29HW99TAInUi/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Offline Reinforcement Learning as Anti-Exploration",
+      "authors": "Shideh Rezaeifar (Geneva University); Robert Dadashi (Google); Nino Vieillard (Google Research); Léonard Hussenot (Google Research, Brain Team); Olivier Bachem (Google Brain); Olivier Pietquin (Google Research - Brain Team); Matthieu Geist (Google Brain)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/13XWH99qQEclqYpGi7zQt327UnC73c4sI/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "What Can I Do Here? Learning New Skills by Imagining Visual Affordances",
+      "authors": "Khazatsky Alexander (UC Berkeley); Ashvin V Nair (UC Berkeley)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1iN58Jwif_omFjMvyvRk8aa2gWn2LWAge/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://youtu.be/AaGUfXb0G5U"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "IV-RL: Leveraging Target Uncertainty Estimation for Sample Efficiency in Deep Reinforcement Learning",
+      "authors": "Vincent Mai (Mila, Université de Montréal); Kaustubh Mani (Mila, Université de Montréal); Liam Paull (Université de Montréal)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1IyYxDSYI805pyq691Jr1Y2LZc6Xi5vHI/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning a Markov Model for Evaluating Soccer Decision Making",
+      "authors": "Maaike Van Roy (KULeuven); Pieter Robberechts (KU Leuven); Wen-Chi Yang (KU Leuven); Luc De Raedt (KU Leuven); Jesse Davis (KU Leuven)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1md0JbevjTMKQP93sXzqxN_ehljSgNU1P/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Topological Experience Replay for Fast Q-Learning",
+      "authors": "Zhang-Wei Hong (Massachusetts Institute of Technology); Tao Chen (MIT); Yen-Chen Lin (MIT); Joni Pajarinen (Aalto University); Pulkit Agrawal (MIT)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1IprNBX-WGaG1_2YEvVOBg-hTaSwcc40G/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://youtu.be/IWRxZfJsV2Q"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "AppBuddy: Learning to Accomplish Tasks in Mobile Apps via Reinforcement Learning",
+      "authors": "Maayan Shvo (University of Toronto and Vector Institute); Zhiming Hu (Samsung AI Center, Toronto); Rodrigo A Toro Icarte (University of Toronto and Vector Institute); Iqbal Mohomed (Samsung Research America); Allan D Jepson (Samsung Toronto AIC); Sheila A. McIlraith (University of Toronto and Vector Institute)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1Rfzewv5FSc9afp8Nr3_pwS8MoSpMbp9l/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reward Shaping for User Satisfaction in a REINFORCE Recommender",
+      "authors": "Konstantina Christakopoulou (Google); Can Xu (Google); Sai Zhang (Google); Sriraj Badam (Google); Trevor Potter (Google); Daniel Li (Google); Hao Wan (Google); Xinyang Yi (Google); Ya Le (Google); Chris Berg (Google); Eric Bencomo Dixon (Google); Ed H. Chi (Google); Minmin Chen (Google)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1qrVG9LtMt5ySIEz6kOGEcU2qo1KoPmd7/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning Action Translator for Meta Reinforcement Learning on Sparse-Reward Tasks",
+      "authors": "Yijie Guo (University of Michigan); Qiucheng Wu (University of Michigan); Honglak Lee (LG AI Research / University of Michigan)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1eX2-yE0lI9x-ztmrK7NLae0I_hCFF6bj/view?usp=sharing"
+       ],
+       [
+        "appendix",
+        "https://drive.google.com/file/d/1C0m2PxvyeSRe0Od0n0xx2Arz3XTXMr0_/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Mind the Gap: Safely Bridging Offline and Online Reinforcement Learning",
+      "authors": "Wanqiao Xu (University of Michigan); Kan Xu (University of Pennsylvania); Hamsa Bastani (Wharton); Osbert Bastani (University of Pennsylvania)",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "Deploying a Machine Learning System for COVID-19 Testing in Greece",
+      "authors": "Hamsa Bastani (Wharton); Kimon Drakopoulos (USC, Data Sciences and Operations); Vishal Gupta ()",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1CfSIao25ddNFQkrNjLph1bcoiP1GuCz3/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "The Reflective Explorer: Online Meta-Exploration from Offline Data in Visual Tasks with Sparse Rewards",
+      "authors": "Rafael Rafailov (Stanford University); Varun Kumar (Intel AI Lab); Tianhe Yu (Stanford University); Avi Singh (UC Berkeley); Mariano Phielipp (Intel AI Lab); Chelsea Finn (Stanford)",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "Improving Human Decision-Making with Machine Learning",
+      "authors": "Hamsa Bastani (Wharton); Osbert Bastani (University of Pennsylvania); Wichinpong Sinchaisri (Berkeley Haas)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1JovzD1y1miY4dnxoi5XVjmOXcWmhpH2-/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Avoiding Overfitting to the Importance Weights in Offline Policy Optimization",
+      "authors": "Yao Liu (Stanford University); Emma Brunskill (Stanford University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1kDE8810n0CrfcG1xe_MDau0LgMuiacTB/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Towards Reinforcement Learning for Pivot-based Neural Machine Translation with Non-autoregressive Transformer",
+      "authors": "Evgeniia Tokarchuk (University of Amsterdam); Jan Rosendahl (RWTH Aachen University); Weiyue Wang (RWTH Aachen University); Pavel Petrushkov (eBay); Tomer Lancewicki (eBay Research); Shahram Khadivi (eBay, Inc.); Hermann Ney ( RWTH Aachen University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1A6uDW1Oltx32zlklOk6zlW_G66qxZ8AB/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Data-Pooling Reinforcement Learning for Personalized Healthcare Intervention",
+      "authors": "Xinyun Chen (Chinese University of Hong Kong, Shenzhen); Pengyi Shi (Purdue University); Xiuwen Wang (Chinese University of Hong Kong, Shenzhen)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1Ih8hadlUrFYDlueE4G3zntzOdNIXsY9-/view?usp=sharing"
+       ],
+       [
+        "video",
+        "https://drive.google.com/file/d/1Hh7ntW2Oiw7NByNgJsf28DMODDrloPxw/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Mitigating Covariate Shift in Imitation Learning via Offline Data Without Great Coverage",
+      "authors": "Jonathan Chang (Cornell University); Masatoshi Uehara (Cornell University); Dhruv Sreenivas (Cornell University); Rahul Kidambi (Amazon Search & AI); Wen Sun (Cornell University)",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "MobILE: Model-Based Imitation Learning From Observation Alone",
+      "authors": "Rahul Kidambi (Amazon Search & AI); Jonathan Chang (Cornell University); Wen Sun (Cornell University)",
+      "links": [],
+      "note": ""
+     },
+     {
+      "title": "Objective Robustness in Deep Reinforcement Learning",
+      "authors": "Jack Koch (Unaffiliated); Lauro Langosco di Langosco (ETH); Jacob Pfau (University of California San Francisco); James Le (Unaffiliated); Lee D Sharkey (ETHZ)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1cfrJzKcZ0J6ypeGhr8RnGiDT8y1BHM12/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Is Bang-Bang Control All You Need?",
+      "authors": "Tim N Seyde (MIT); Igor Gilitschenski (Massachusetts Institute of Technology); Wilko Schwarting (Massachusetts Institute of Technology); Bartolomeo Stellato (Princeton University); Martin Riedmiller (DeepMind); Markus Wulfmeier (DeepMind); Daniela Rus (MIT CSAIL)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1pzlVVsQeAJDOxRHp9p6HVknzQTiCtwNT/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Off-Policy Evaluation with General Logging Policies",
+      "authors": "Kyohei Okumura (Northwestern University); Yusuke Narita (Yale University); Kohei Yata (Yale University); Akihiro Shimizu (Mercari)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1WmPPLcOtx8_pWAhnXql9sfYvJU3Zwt5I/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Safe Deep Reinforcement Learning for Multi-Agent Systems with Continuous Action Spaces",
+      "authors": "Ziyad Sheebaelhamd (ETH Zurich); Konstantinos Zisis (ETH Zurich); Athina Nisioti (ETH Zurich); Dimitris Gkouletsos (ETH Zurich); Dario Pavllo (ETH Zurich); Jonas Kohler (ETHZ)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1vJA4Adx89D5PSZzcNNUQCsiQ77qNwGPF/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning with Logical Action-Aware Features for Polymer Discovery",
+      "authors": "Sarathkrishna Swaminathan (IBM Research); Dmitry Zubarev (IBM Research-Almaden); Subhajit Chaudhury (IBM Research AI); Asim Munawar (IBM Research)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1jX1Z1Lc9ellMeDE0JccwYwrwBjSIjcuG/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Constraints Penalized Q-Learning for Safe Offline Reinforcement Learning",
+      "authors": "Haoran Xu (Xidian University); Xianyuan Zhan (JD Intelligent Cities Research); Xiangyu Zhu (JD Intelligent Cities Research)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1z4PfVO9Nag9_2d82qWodWnwhHNYFMgle/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "ModelLight: Model-Based Meta-Reinforcement Learning for Traffic Signal Control",
+      "authors": "Xingshuai Huang (McGill University); di wu (McGill); Benoit Boulet (Benoit Boulet, McGill University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1aF3oDQBJ5LCWhjajp5FFiIikYKLgLrK2/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Robust Risk-Sensitive Reinforcement Learning Agents for Trading Markets",
+      "authors": "Yue Gao (University of Alberta); Pablo Hernandez-Leal (Borealis AI); Kry Yik Chau Lui ()",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1h0a0FAIifO3vyNeMOVXSPdr3Euf9d5bp/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning for Power System Control: Using Adversarial Training to Improve Robustness",
+      "authors": "Alexander Pan (Caltech); Yongkyun Lee (Caltech); Yuanyuan Shi (Caltech); Huan Zhang (UCLA)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1eITueW-eH7sznPrHtW8T_99l8wBefu_c/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Understanding the Generalization Gap in Visual Reinforcement Learning",
+      "authors": "Anurag Ajay (MIT); Ge Yang (University of Chicago); Ofir Nachum (Google); Pulkit Agrawal (MIT)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1FnqQ0BFQbwANMNN6rm4cJnKoCjs4FL7_/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Optimizing Dynamic Treatment Regimes via Volatile Contextual Gaussian Process Bandits",
+      "authors": "Ahmet Alparslan Celik (Bilkent University); Cem Tekin (Bilkent University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1FA22qOk9i-YMGUjF3C2qoaXGdpzKp99K/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reset-Free Reinforcement Learning via Multi-Task Learning: Learning Dexterous Manipulation Behaviors without Human Intervention",
+      "authors": "Abhishek Gupta (UC Berkeley); Justin Yu (Berkeley); Zihao Zhao (UC Berkeley); Vikash Kumar (Univ. of Washington); Aaron Rovinsky (UC Berkeley); Kelvin Xu (University of California, Berkeley); Thomas Devlin (UC Berkeley); Sergey Levine (University of California, Berkeley)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1rRiPlXm7gXDRaSQq2LRKmTAwIaJVEMXY/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Attend2Pack: Bin Packing through Deep Reinforcement Learning with Attention",
+      "authors": "Jingwei Zhang (University of Freiburg); Bin Zi (Dorabot Inc.); Xiaoyu Ge (Australian National University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1U-P7FpYy0Xj4EshD9R-OpQIPArSVwsNB/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Designing Interpretable Approximations to Deep Reinforcement Learning",
+      "authors": "Nathan J Dahlin (University of Southern California); Krishna C Kalagarla (University of Southern California); Nikhil Naik (University of Southern California); Rahul Jain (University of Southern California); Pierluigi Nuzzo (University of Southern California)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1PPvkO35IXWb3afAqWADuMje6QhABdYrv/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Decision Transformer: Reinforcement Learning via Sequence Modeling",
+      "authors": "Lili Chen (UC Berkeley); Kevin Lu (UC Berkeley); Aravind Rajeswaran (University of Washington); Kimin Lee (UC Berkeley); Aditya Grover (Facebook AI Research); Michael Laskin (UC Berkeley); Pieter Abbeel (UC Berkeley); Aravind Srinivas (UC Berkeley); Igor Mordatch (Google)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/16EJ5_DLptOTBXqn30htKARVQzWuoBrXS/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Multi-Task Offline Reinforcement Learning with Conservative Data Sharing",
+      "authors": "Tianhe Yu (Stanford University); Aviral Kumar (UC Berkeley); Yevgen Chebotar (Google); Karol Hausman (Google Brain); Sergey Levine (UC Berkeley); Chelsea Finn (Stanford)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1ret8FLhAYceqLC-CbArHfXjQrmX72Srs/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Value-Based Deep Reinforcement Learning Requires Explicit Regularization",
+      "authors": "Aviral Kumar (UC Berkeley); Rishabh Agarwal (Google Research, Brain Team); Aaron Courville (University of Montreal); Tengyu Ma (Stanford); George Tucker (Google Brain); Sergey Levine (UC Berkeley)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1Fg43H5oagQp-ksjpWBf_aDYEzAFMVJm6/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "A Policy Efficient Reduction Approach to Convex Constrained Deep Reinforcement Learning",
+      "authors": "Tianchi Cai (Ant Group); Wenpeng Zhang (Ant Group); Lihong Gu (Ant Group); Xiaodong Zeng (Ant Services Group); Jinjie Gu (Ant Group)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1mh3wBWQaMPNtxj7jBo0cKHyptvORAAvf/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Hierarchical Imitation Learning with Contextual Bandits for DynamicTreatment Regimes",
+      "authors": "Lu Wang (East China Normal University); Wenchao Yu (UCLA); Wei Cheng (NEC); Bo Zong (NEC); Haifeng Chen (NEC)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1n3dYSMgc7jf0y8EgZxKDdfvj-IvnwDxH/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning Agent Training with Goals for Real World Tasks",
+      "authors": "Xuan Zhao (Microsoft); Marcos Campos (microsoft)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1AU6YzzQBpF90M6qfVEsAwZsurO9vOliB/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "RRL: Resnet as representation for Reinforcement Learning",
+      "authors": "Rutav M Shah (Indian Institute of Technology, Kharagpur); Vikash Kumar (Univ. of Washington)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1BJmheYmyrGEQ39pE7rFf2HgLFMFJMPNl/view?usp=sharing"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   }
+  ],
+  "cfp": [
+   "Reinforcement learning (RL) is a general learning, predicting, and decision making paradigm and applies broadly in many disciplines, including science, engineering and humanities. RL has seen prominent successes in many problems, such as Atari games, AlphaGo, robotics, recommender systems, and AutoML. However, applying RL in the real world remains challenging, and a natural question is:",
+   "Why isn’t RL used even more often and how can we improve this?",
+   "The main goals of the workshop are to: (1) identify key research problems that are critical for the success of real-world applications; (2) report progress on addressing these critical issues; and (3) have practitioners share their success stories of applying RL to real-world problems, and the insights gained from such applications.",
+   "We invite paper submissions successfully applying RL algorithms to real-life problems and/or addressing practically relevant RL issues. Our topics of interest are general, including (but not limited to):",
+   "Practical RL algorithms, which cover all algorithmic challenges of RL, especially those that directly address challenges faced by real-world applications;",
+   "Practical issues: generalization, sample/time/space efficiency, exploration vs. exploitation, reward specification and shaping, scalability, model-based learning (model validation and model error estimation), prior knowledge, safety, accountability, interpretability, reproducibility, hyper-parameter tuning;",
+   "Applications: advertizing, autonomous driving, business processes, chemical synthesis, conversational AI, drawing, drug design, education, energy, finance, healthcare, industrial control, music, recommender systems, robotics, transportation, or other problems in science, engineering and humanities."
+  ],
+  "dates": [
+   [
+    "Deadline",
+    "June 12, 2021"
+   ]
+  ],
+  "cfp_extra": [
+   "We invite unpublished submissions up to 8 pages excluding references and appendix, in PDF format using the ICML 2021 template and style guidelines. Here is a customized <a href=\"https://drive.google.com/file/d/1wQ0RpDRbtZDXxADO-9glyyjcXfQjaHmg/view?usp=sharing\" target=\"_blank\" rel=\"noopener\">style file</a> for the workshop. (In the .tex file, use \"\\usepackage{icml2021}\" for the submission, and use \"\\usepackage[accepted]{icml2021}\" for the final version if accepted.) We welcome position papers and are open to papers currently under review at other venues. We will follow a double-blind review. We also welcome recently published work, which may keep its original format (for submission and for final version). For the submissions of ICML rejections, please attach the reviews. All accepted papers will be presented as posters, and will be made available on the workshop website. Accepted papers are non-archival, i.e., there will be no proceedings for this workshop.",
+   "The submission website is: <a href=\"https://cmt3.research.microsoft.com/RL4RealLife2021/\" target=\"_blank\" rel=\"noopener\">https://cmt3.research.microsoft.com/RL4RealLife2021/</a>"
+  ],
+  "comm": [
+   [
+    "Slack Workspace for RL4Real Life",
+    "https://join.slack.com/t/rl4reallife/shared_invite/zt-870ehl9e-N~ke75JWIzAYLUrJ3R0ZMg"
+   ],
+   [
+    "RL4RealLife2021@gmail.com",
+    "mailto:RL4RealLife2021@gmail.com"
+   ],
+   [
+    "Twitter: #RL4RealLife",
+    null
+   ]
+  ],
+  "pc": [
+   "Abhishek Naik, University of Alberta",
+   "Alberto Maria Metelli, Politecnico di Milano",
+   "Aleksandra Faust, Google Brain",
+   "Alex Lewandowski, University of Alberta",
+   "Amarildo Likmeta, Universita di Bologna, Politecnico di Milano",
+   "Benjamin Eisner, Carnegie Mellon University",
+   "Bo Chang, Google",
+   "Bo Liu, Auburn University",
+   "Chih-wei Hsu, Google Research",
+   "Craig Sherstan, University of Alberta",
+   "Daochen Zha, Texas A&M University",
+   "David Janz, University of Cambridge",
+   "Hager Radi, University of Alberta",
+   "Haipeng Chen, Harvard University",
+   "Hanjun Dai, Google Brain",
+   "Hengshuai Yao, Huawei",
+   "Henry Charlesworth, University of Warwick",
+   "Hongming Zhang, University of Alberta",
+   "Hugo Caselles-Dupré, Flowers Team (ENSTA ParisTech & INRIA) & Softbank Robotics Europe",
+   "Ioannis Boukas, University of Liège",
+   "Jincheng Mei, Google",
+   "John Martin, University of Alberta",
+   "Juan Jose Garau Luis, MIT",
+   "Julian Skirzynski, University of California, San Diego",
+   "Junfeng Wen, University of Alberta",
+   "Justin Basilico, Netflix",
+   "Kamyar Azizzadenesheli, Purdue University",
+   "Luchen Li, Imperial College London",
+   "Manan Tomar, University of Alberta",
+   "Myounggyu Won, University of Memphis",
+   "Natasha Jaques, UC Berkeley",
+   "Nazim Kemal Ure, Istanbul Technical University",
+   "Ofir Nachum, Google",
+   "Pablo Samuel Castro, Google",
+   "Rasool Fakoor, Amazon",
+   "Rohin Shah, UC Berkeley",
+   "Ruitong Huang, Borealis AI",
+   "Ruofan Kong, Microsoft",
+   "Sarah Dean, UC Berkeley",
+   "Scott Rome, Comcast",
+   "Shangtong Zhang, University of Oxford",
+   "Shengpu Tang, University of Michigan",
+   "Shuai Li, Shanghai Jiao Tong University",
+   "Srijita Das, University of Alberta",
+   "Srivatsan Krishnan, Harvard University",
+   "Stav Belogolovsky, Technion",
+   "Subhojyoti Mukherjee, University of Massachusetts Amherst",
+   "Tengyang Xie, University of Illinois at Urbana-Champaign",
+   "Tengyu Xu, The Ohio State University",
+   "Vianney Perchet, ENS Paris-Saclay & Criteo AI Lab",
+   "Vidit Saxena, KTH Royal Institute of Technology, Stockholm",
+   "Wann-Jiun Ma, Duke University",
+   "Xinshi Chen, Georgia Institute of Technology",
+   "Xuan Zhao, Microsoft",
+   "Ya Le, Google",
+   "Yao Liu, Stanford University",
+   "Yi Wan, University of Alberta",
+   "Yongshuai Liu, University of California, Davis",
+   "Yuqing Hou, Intel Labs China",
+   "Yuyan Wang, Google Brain",
+   "Zhang-Hua Fu, The Chinese University of Hong Kong, Shenzhen",
+   "Zhimin Hou, National University of Singapore",
+   "Zhipeng Wang, Apple"
+  ],
+  "chairs": [
+   {
+    "name": "Minmin Chen",
+    "aff": "Google",
+    "url": "https://scholar.google.com/citations?user=kR7DersAAAAJ&hl=en&oi=ao",
+    "photo": "assets/people/minmin-chen.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Omer Gottesman",
+    "aff": "Brown",
+    "url": "https://scholar.google.com/citations?user=glNJx5zYUbsC&hl=en",
+    "photo": "assets/people/omer-gottesman.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Lihong Li",
+    "aff": "Amazon",
+    "url": "https://lihongli.github.io",
+    "photo": "assets/people/lihong-li.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Yuxi Li",
+    "aff": "",
+    "url": "http://attain.ai",
+    "photo": "assets/people/yuxi-li.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Zongqing Lu",
+    "aff": "Peking University",
+    "url": "https://z0ngqing.github.io",
+    "photo": "assets/people/zongqing-lu.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "A. Rupam Mahmood",
+    "aff": "University of Alberta",
+    "url": "https://armahmood.github.io",
+    "photo": "assets/people/a-rupam-mahmood.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Niranjani Prasad",
+    "aff": "Microsoft Research",
+    "url": "https://niranjaniprasad.github.io/",
+    "photo": "assets/people/niranjani-prasad.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Zhiwei (Tony) Qin",
+    "aff": "Didi",
+    "url": "http://tonyzqin.wordpress.com",
+    "photo": "assets/people/zhiwei-tony-qin.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Csaba Szepesvari",
+    "aff": "DeepMind & University of Alberta",
+    "url": "https://sites.ualberta.ca/~szepesva/",
+    "photo": "assets/people/csaba-szepesvari.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Matthew E. Taylor",
+    "aff": "University of Alberta",
+    "url": "https://drmatttaylor.net",
+    "photo": "assets/people/matthew-e-taylor.png",
+    "role": "",
+    "links": []
+   }
+  ],
+  "talks": [],
+  "previous": [
+   [
+    "Machine Learning Special Issue on Reinforcement Learning for Real Life",
+    "https://link.springer.com/journal/10994/topicalCollection/AC_350f3b54f0a813f13d3b54e8d0233bfc"
+   ],
+   [
+    "Reinforcement Learning for Real Life Virtual Workshop 2020",
+    "2020.html"
+   ],
+   [
+    "Reinforcement Learning for Real Life Workshop at ICML 2019",
+    "2019.html"
+   ]
+  ],
+  "venue_image": "assets/venues/2021.jpg",
+  "venue_credit": {},
+  "venue_focus": "center"
+ },
+ "2022": {
+  "year": 2022,
+  "edition": "4th",
+  "conf": "NeurIPS 2022",
+  "date": "December 3, 2022",
+  "city": "New Orleans, LA",
+  "location": "Ernest N. Morial Convention Center",
+  "location_url": "https://nips.cc/virtual/2022/workshop/50014",
+  "mode": "In-person",
+  "intro": [
+   "Reinforcement learning (RL) is a general learning, predicting, and decision-making paradigm and applies broadly in many disciplines in science, engineering, and the arts. RL has seen prominent successes in many problems, such as those in simulated environments like Atari games and AlphaGo, and those in real life like robotics, recommender systems, and nuclear fusion. However, given the significant theoretical and algorithmic gains made in the past few years, applying RL in real life remains challenging, and a natural question is:",
+   "Why isn’t RL used even more often and how can we improve this?",
+   "Selected papers from this workshop were published in the <a href=\"https://link.springer.com/collections/bifgfddgff\" target=\"_blank\" rel=\"noopener\"><em>Machine Learning</em> journal (Springer)</a>, in a special issue on Reinforcement Learning for Real Life."
+  ],
+  "top_links": [
+   [
+    "Papers published in the Machine Learning journal",
+    "https://link.springer.com/collections/bifgfddgff"
+   ],
+   [
+    "Workshop page at NeurIPS 2022 (videos, posters)",
+    "https://nips.cc/virtual/2022/workshop/50014"
+   ]
+  ],
+  "schedule": [
+   {
+    "time": "7:30-8:25",
+    "what": "Posters (for early birds; optional)",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "8:25-8:30",
+    "what": "Opening Remarks",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "8:30-9:00",
+    "what": "Invited Talk: Peter Stone, UT Austin / Sony AI",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "9:00-9:30",
+    "what": "Invited Talk: Robert Nishihara, Anyscale",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "9:30-10:00",
+    "what": "Invited Talk: Dhruv Madeka, Amazon",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "10:00-10:20",
+    "what": "Coffee Break",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "10:20-11:10",
+    "what": "Panel: RL Implementation",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "11:10-12:00",
+    "what": "Panel: RL Benchmarks",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "12:00-13:30",
+    "what": "Lunch/Posters",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "13:30-14:00",
+    "what": "Invited Talk: Matej Balog, DeepMind",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "14:00-14:55",
+    "what": "Panel: RL Theory-Practice Gap",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "14:55-15:00",
+    "what": "Closing Remarks",
+    "links": [],
+    "brk": false
+   },
+   {
+    "time": "15:00-15:30",
+    "what": "Coffee Break/Posters",
+    "links": [],
+    "brk": true
+   },
+   {
+    "time": "15:30-17:00",
+    "what": "Posters",
+    "links": [],
+    "brk": true
+   }
+  ],
+  "talks": [
+   {
+    "name": "Dhruv Madeka",
+    "aff": "Amazon",
+    "title": "Deep Reinforcement Learning for Real-World Inventory Management",
+    "abstract": "We present a Deep Reinforcement Learning approach to solving a periodic review inventory control system with stochastic vendor lead times, lost sales, correlated demand, and price matching. While this dynamic program has historically been considered intractable, we show that several policy learning approaches are competitive with or outperform classical baseline approaches. In order to train these algorithms, we develop novel techniques to convert historical data into a simulator and present a collection of results that motivate this approach. We also present a model-based reinforcement learning procedure (Direct Backprop) to solve the dynamic periodic review inventory control problem by constructing a differentiable simulator. Under a variety of metrics Direct Backprop outperforms model-free RL and newsvendor baselines, in both simulations and real-world deployments.",
+    "bio": "Dhruv Madeka is a Principal Machine Learning Scientist at Amazon. His current research focuses on applying Deep Reinforcement Learning to supply chain problems. Dhruv has also worked on developing generative and supervised deep learning models for probabilistic time series forecasting. In the past - Dhruv worked in the Quantitative Research team at Bloomberg LP, developing open source tools for the Jupyter ecosystem and conducting advanced mathematical research in derivatives pricing, quantitative finance and election forecasting.",
+    "video": null,
+    "photo": "assets/people/dhruv-madeka.png"
+   },
+   {
+    "name": "Robert Nishihara",
+    "aff": "Anyscale",
+    "title": "Scaling reinforcement learning in the real world, from gaming to finance to manufacturing",
+    "abstract": "Reinforcement learning is transforming industries from gaming to robotics to manufacturing. This talk showcases how a variety of industries are adopting reinforcement learning to overhaul their businesses, from changing the nature of game development to designing the boat that won the America's Cup. These industries leverage <a href=\"https://github.com/ray-project/ray\" target=\"_blank\" rel=\"noopener\">Ray</a>, a distributed framework for scaling Python applications and machine learning applications. Ray is used by companies across the board from Uber to OpenAI to Shopify to Amazon to scale their machine learning training, inference, data ingest, and reinforcement learning workloads.",
+    "bio": "Robert Nishihara is one of the creators of <a href=\"https://github.com/ray-project/ray\" target=\"_blank\" rel=\"noopener\">Ray</a>, a distributed framework for scaling Python applications and machine learning applications. Ray is used by companies across the board from Uber to OpenAI to Shopify to Amazon to scale their machine learning training, inference, data ingest, and reinforcement learning workloads. He is one of the co-founders and CEO of <a href=\"http://anyscale.com/\" target=\"_blank\" rel=\"noopener\">Anyscale</a>, which is the company behind Ray. He did his PhD in machine learning and distributed systems in the computer science department at UC Berkeley. Before that, he majored in math at Harvard.",
+    "video": null,
+    "photo": "assets/people/robert-nishihara.png"
+   },
+   {
+    "name": "Peter Stone",
+    "aff": "UT Austin / Sony AI",
+    "title": "Outracing Champion Gran Turismo Drivers with Deep Reinforcement Learning",
+    "abstract": "Many potential applications of artificial intelligence involve making real-time decisions in physical systems while interacting with humans. Automobile racing represents an extreme example of these conditions; drivers must execute complex tactical manoeuvres to pass or block opponents while operating their vehicles at their traction limits. Racing simulations, such as the PlayStation game Gran Turismo, faithfully reproduce the non-linear control challenges of real race cars while also encapsulating the complex multi-agent interactions. Here we describe how we trained agents for Gran Turismo that can compete with the world's best e-sports drivers. We combine state-of-the-art, model-free, deep reinforcement learning algorithms with mixed-scenario training to learn an integrated control policy that combines exceptional speed with impressive tactics. In addition, we construct a reward function that enables the agent to be competitive while adhering to racing's important, but under-specified, sportsmanship rules. We demonstrate the capabilities of our agent, Gran Turismo Sophy, by winning a head-to-head competition against four of the world's best Gran Turismo drivers. By describing how we trained championship-level racers, we demonstrate the possibilities and challenges of using these techniques to control complex dynamical systems in domains where agents must respect imprecisely defined human norms. (A previous talk: <a href=\"https://www.cs.utexas.edu/~pstone/media/Stone_UofM_041522.mp4\" target=\"_blank\" rel=\"noopener\">https://www.cs.utexas.edu/~pstone/media/Stone_UofM_041522.mp4</a>)",
+    "bio": "Dr. Peter Stone holds the Truchard Foundation Chair in Computer Science at the University of Texas at Austin. He is Associate Chair of the Computer Science Department, as well as Director of Texas Robotics. In 2013 he was awarded the University of Texas System Regents' Outstanding Teaching Award and in 2014 he was inducted into the UT Austin Academy of Distinguished Teachers, earning him the title of University Distinguished Teaching Professor. Professor Stone's research interests in Artificial Intelligence include machine learning (especially reinforcement learning), multiagent systems, and robotics. Professor Stone received his Ph.D in Computer Science in 1998 from Carnegie Mellon University. From 1999 to 2002 he was a Senior Technical Staff Member in the Artificial Intelligence Principles Research Department at AT&amp;T Labs - Research. He is an Alfred P. Sloan Research Fellow, Guggenheim Fellow, AAAI Fellow, IEEE Fellow, AAAS Fellow, ACM Fellow, Fulbright Scholar, and 2004 ONR Young Investigator. In 2007 he received the prestigious IJCAI Computers and Thought Award, given biannually to the top AI researcher under the age of 35, and in 2016 he was awarded the ACM/SIGAI Autonomous Agents Research Award. Professor Stone co-founded Cogitai, Inc., a startup company focused on continual learning, in 2015, and currently serves as Executive Director of Sony AI America.",
+    "video": null,
+    "photo": "assets/people/peter-stone.png"
+   },
+   {
+    "name": "Matej Balog",
+    "aff": "DeepMind",
+    "title": "AlphaTensor: Discovering faster matrix multiplication algorithms with RL",
+    "abstract": "Improving the efficiency of algorithms for fundamental computational tasks such as matrix multiplication can have widespread impact, as it affects the overall speed of a large amount of computations. Automatic discovery of algorithms using ML offers the prospect of reaching beyond human intuition and outperforming the current best human-designed algorithms. In this talk I’ll present AlphaTensor, our RL agent based on AlphaZero for discovering efficient and provably correct algorithms for the multiplication of arbitrary matrices. AlphaTensor discovered algorithms that outperform the state-of-the-art complexity for many matrix sizes. Particularly relevant is the case of 4 × 4 matrices in a finite field, where AlphaTensor’s algorithm improves on Strassen’s two-level algorithm for the first time since its discovery 50 years ago. I’ll present our problem formulation as a single-player game, the key ingredients that enable tackling such difficult mathematical problems using RL, and the flexibility of the AlphaTensor framework.",
+    "bio": "Matej Balog is a Senior Research Scientist at DeepMind, working in the Science team on applications of AI to Maths and Computation. Prior to joining DeepMind he worked on program synthesis and understanding, and was a PhD student at the University of Cambridge with Zoubin Ghahramani, working on general machine learning methodology, in particular on conversions between fundamental computational tasks such as integration, sampling, optimization, and search.",
+    "video": null,
+    "photo": "assets/people/matej-balog.png"
+   }
+  ],
+  "panels": [
+   {
+    "name": "RL Benchmarks",
+    "chairs": "Moderator: Minmin Chen",
+    "video": null,
+    "ask": null,
+    "members": [
+     {
+      "name": "Minmin Chen",
+      "aff": "Google",
+      "url": "https://scholar.google.com/citations?user=kR7DersAAAAJ&hl=en&oi=ao",
+      "photo": "assets/people/minmin-chen.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Pablo Samuel Castro",
+      "aff": "Google",
+      "url": null,
+      "photo": "assets/people/pablo-samuel-castro.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Linxi \"Jim\" Fan",
+      "aff": "NVIDIA",
+      "url": null,
+      "photo": "assets/people/linxi-jim-fan.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Caglar Gulcehre",
+      "aff": "DeepMind",
+      "url": null,
+      "photo": "assets/people/caglar-gulcehre.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Tony Jabara",
+      "aff": "Spotify",
+      "url": null,
+      "photo": "assets/people/tony-jabara.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Peter Stone",
+      "aff": "UT Austin / Sony AI",
+      "url": null,
+      "photo": "assets/people/peter-stone.png",
+      "role": "",
+      "links": []
+     }
+    ]
+   },
+   {
+    "name": "RL Implementation: From the Halfway Point to the Last Mile",
+    "chairs": "Moderator: Alborz Geramifard, Meta",
+    "video": null,
+    "ask": null,
+    "members": [
+     {
+      "name": "Alborz Geramifard",
+      "aff": "Meta",
+      "url": null,
+      "photo": "assets/people/alborz-geramifard.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Kence Anderson",
+      "aff": "Microsoft",
+      "url": null,
+      "photo": "assets/people/kence-anderson.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Craig Buhr",
+      "aff": "MathWorks",
+      "url": null,
+      "photo": "assets/people/craig-buhr.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Robert Nishihara",
+      "aff": "Anyscale",
+      "url": null,
+      "photo": "assets/people/robert-nishihara.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Yuandong Tian",
+      "aff": "Meta AI (FAIR)",
+      "url": null,
+      "photo": "assets/people/yuandong-tian.png",
+      "role": "",
+      "links": []
+     }
+    ]
+   },
+   {
+    "name": "RL Theory-Practice Gap",
+    "chairs": "Moderator: Peter Stone",
+    "video": null,
+    "ask": null,
+    "members": [
+     {
+      "name": "Peter Stone",
+      "aff": "UT Austin / Sony AI",
+      "url": null,
+      "photo": "assets/people/peter-stone.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Matej Balog",
+      "aff": "DeepMind",
+      "url": null,
+      "photo": "assets/people/matej-balog.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Jonas Buchli",
+      "aff": "DeepMind",
+      "url": null,
+      "photo": "assets/people/jonas-buchli.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Jason Gauci",
+      "aff": "Argo AI",
+      "url": null,
+      "photo": "assets/people/jason-gauci.png",
+      "role": "",
+      "links": []
+     },
+     {
+      "name": "Dhruv Madeka",
+      "aff": "Amazon",
+      "url": null,
+      "photo": "assets/people/dhruv-madeka.png",
+      "role": "",
+      "links": []
+     }
+    ]
+   }
+  ],
+  "paper_groups": [
+   {
+    "title": "Accepted papers",
+    "papers": [
+     {
+      "title": "Optimizing Audio Recommendations for the Long-Term",
+      "authors": "Lucas Maystre (Spotify); Daniel Russo (Columbia); Yu Zhao (Spotify)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1Bfw3LoRJ836ZNH232j3g_4-iZk76q3CK/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Provably Efficient Reinforcement Learning for Online Adaptive Influence Maximization",
+      "authors": "Kaixuan Huang (Princeton University); Yu Wu (Princeton University); Xuezhou Zhang (Princeton); Shenyinying Tu (LinkedIn); Qingyun Wu (Pennsylvania State University); Mengdi Wang (Princeton University/DeepMind); Huazheng Wang (Oregon State University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/10hzsm83gKHm_ykB426jVn3mcQrvZ6jWf/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Multi-Agent Reinforcement Learning for Fast-Timescale Demand Response",
+      "authors": "Vincent Mai (Mila, Université de Montréal); Philippe Maisonneuve (Polytechnique Montreal & GERAD); Tianyu Zhang (Mila, Université de Montréal); Jorge Montalvo Arvizu (Solario); Liam Paull (University of Montreal); Antoine Lesage-Landry (Polytechnique Montréal & GERAD)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1ZY__smdhekV-StirvwlA4HjT-qi6X1n2/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "LibSignal: An Open Library for Traffic Signal Control",
+      "authors": "Hao Mei (New jersey institue of technology); Xiaoliang Lei ( Xi'an Jiaotong University); Longchao Da (New Jersey Institute of Technology); Bin Shi (Xi'an jiaotong University); Hua Wei (NJIT)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1bmFEz1UfiBpu4dWWFvLFyenPhjk_2-sa/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Multi-Agent Reinforcement Learning with Shared Resources for Inventory Management",
+      "authors": "Yuandong Ding (Huazhong University of Science and Technology); Mingxiao Feng (University of Science and Technology of China); Guozi Liu (Carnegie Mellon University); Wei Jiang (University of Illinois at Urbana-Champaign); Chuheng Zhang (Microsoft Research); Li Zhao (Microsoft Research); Lei Song (Microsoft Research); Houqiang Li (University of Science and Technology of China); Yan Jin (Huazhong University of Science and Technology); Jiang Bian (Microsoft Research)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1VOueGTDsUq4PmLLx--3eTJi2264Fc1IN/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Implementing Reinforcement Learning Datacenter Congestion Control in NVIDIA NICs",
+      "authors": "Benjamin Fuhrer (Nvidia Networking); Yuval Shpigelman (Nvidia Networking); Chen Tessler (NVIDIA); Shie Mannor (Nvidia); Gal Chechik (Nvidia); Eitan Zahavi (Nvidia Networking); Gal Dalal (NVIDIA Research)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1cCRWoknCYgBLH-qqCldYn6hO7mQKD30J/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Controlling Commercial Cooling Systems Using Reinforcement Learning",
+      "authors": "Jerry Luo (DeepMind); Cosmin Paduraru (DeepMind); Octavian Voicu (DeepMind); Yuri Chervonyi (Google/Deepmind); Scott Munns (Trane Technologies); Jerry Li (Deepmind); Crystal Qian (Google); Praneet Dutta (Google); Daniel Mankowitz (DeepMind); Jared Q Davis (Stanford University | DeepMind); Ningjia Wu (Google); Xingwei Yang (Google); Chu-Ming Chang (Google); Ted Li (Google); Rob Rose (Google); Mingyan Fan (Google); Hootan Nakhost (Google); Tinglin Liu (Google); Deeni Fatiha (DeepMind); Neil Satra (Google); Juliet Rothenberg (Google); Molly Carlin (DeepMind); Satish Tallapaka (Google); Sims Witherspoon (DeepMind); David Parish (Google); Peter Dolan (DeepMind); Chenyu Zhao (Google)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/10H3W3HCDXSuNlrGqHoIQkFAoFhvyP6z7/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Structured Q-learning For Antibody Design",
+      "authors": "Alexander I Cowen-Rivers (Preferred Networks, Inc.); Philip John Gorinski (Huawei Noah's Ark Lab); aivar sootla (HAUWEI ); Asif Khan (University of Edinburgh); Jun WANG (UCL); Jan Peters (TU Darmstadt); Haitham Bou Ammar (Huawei)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/15QvbNtnME36tfPBPmJUQ73zKrg7W35_Q/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Semi-analytical Industrial Cooling System Model for Reinforcement Learning",
+      "authors": "Yuri Chervonyi (Google/Deepmind); Praneet Dutta (Google)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/13haWfMzliwdNhnXHjGUxfH3JuI5RpK67/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "A Versatile and Efficient Reinforcement Learning Approach for Autonomous Driving",
+      "authors": "Guan Wang (Tsinghua University); Haoyi Niu (Tsinghua University); desheng zhu (China University of Mining and Technology-beijing); Jianming Hu (Department of Automation, Tsinghua University); Xianyuan Zhan (Tsinghua University); Guyue Zhou (Tsinghua University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1NTbKwR7VT12UPdeN9HkEu88keoDTStn7/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Function Approximations for Reinforcement Learning Controller for Wave Energy Converters",
+      "authors": "Soumyendu Sarkar (Hewlett Packard Enterprise); Vineet Gundecha (Hewlett Packard Enterpise); Alexander Shmakov (UC Irvine); Sahand Ghorbanpour (Hewlett Packard Enterprise); Ashwin Ramesh Babu (Hewlett Packard Enterprise Labs); Alexandre Pichard (Carnegie Clean Energy); mathieu Cocho (Carnegie Clean Energy)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1xHVl7IxfRTeGsEvhd3wyRs1Rta-vGjPK/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Pareto-Optimal Diagnostic Policy Learning in Clinical Applications via Semi-Model-Based Deep Reinforcement Learning",
+      "authors": "Zheng Yu (Princeton); Yikuan Li (Northwestern University); Joseph Kim (Princeton University); Kaixuan Huang (Princeton University); Yuan Luo (\"Northwestern University, IL\"); Mengdi Wang (Princeton University/DeepMind)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1xs_m5Mw9Wa4QRzhQJb7xdkYiXg95xqJP/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Optimizing Industrial HVAC Systems with Hierarchical Reinforcement Learning",
+      "authors": "William Wong (Carnegie Mellon University); Praneet Dutta (Google); Octavian Voicu (DeepMind); Yuri Chervonyi (Google/Deepmind); Cosmin Paduraru (DeepMind); Jerry Luo (DeepMind)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1kD3AOybNQz4oFczKVQaTWUF5j2LF6_Rt/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Bandits for Online Calibration: An Application to Content Moderation on Social Media Platforms",
+      "authors": "Vashist Avadhanula (Facebook); Omar Abdul Baki (Meta); Hamsa Bastani (Wharton); Osbert Bastani (University of Pennsylvania); Caner Gocmen (Facebook); Daniel Haimovich (Facebook); Darren Hwang (Meta); Dmytro Karamshuk (Facebook); Thomas J. Leeper (Facebook); Jiayuan Ma (Meta); Gregory macnamara (Meta); Jake Mullet (Meta); Christopher Palow (Meta); Sung Park (Meta); Varun S Rajagopal (Meta); Kevin Schaeffer (Facebook); Parikshit Shah (Facebook); Deeksha Sinha (Massachusetts Institute of Technology); Nicolas E Stier-Moses (Facebook); Ben Xu (Meta)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1Ek9lAmoQG7J6OcMmjQL0uz_G2x0iINXD/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Power Grid Congestion Management via Topology Optimization with AlphaZero",
+      "authors": "Matthias Dorfer (enliteAI); Anton Fuxjäger (enliteAI); Kristián Kozák (enliteAI); Patrick M Blies (EnliteAI); Marcel Wasserer (enliteAI)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/17S7vd6kE89IEK8cIN42RDoGR4JqicT_R/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Beyond CAGE: Investigating Generalization of Learned Autonomous Network Defense Policies",
+      "authors": "Melody Wolk (Apple); Andy Applebaum (Apple); Camron Dennler (Apple); Patrick Dwyer (Apple); Marina Moskowitz (Apple); Harold Nguyen (Apple); Nicole Nichols (Apple); Nicole Park (Apple); Paul Rachwalski (Apple); Frank Rau (Apple); Adrian Webster (Apple)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1frDQBb3dlc12BbCzJRJ_H6swVdhAjWGT/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning Approaches for Traffic Signal Control under Missing Data",
+      "authors": "Hao Mei (New jersey institue of technology); Junxian Li (Xi‘an JiaoTong University); Bin Shi (Xi'an jiaotong University); Hua Wei (NJIT)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1f_Rz-7r_aEoeERJCq7nPcDCx9es-QgWn/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "An Empirical Evaluation of Posterior Sampling for Constrained Reinforcement Learning",
+      "authors": "Danil Provodin (TU Eindhoven); Pratik Gajane (Eindhoven University of Technology); Mykola Pechenizkiy (TU Eindhoven); Maurits Kaptein (Tilburg University)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1CMyfWLD9Rg26_iQCbsPeQ3VtCfQ0mpgz/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "MARLIM: Multi-Agent Reinforcement Learning for Inventory Management",
+      "authors": "Rémi Leluc (Télécom Paris); Elie Kadoche (Télécom-Paris); Antoine Bertoncello (TotalEnergies); Sébastien Gourvénec (TotalEnergies)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1IVREafeStBeMRI-pIF3KrnH8sKmo5knh/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "tinyMAN: Lightweight Energy Manager using Reinforcement Learning for Energy Harvesting Wearable IoT Devices",
+      "authors": "Toygun Basaklar (University of Wisconsin-Madison); Yigit Tuncel (UW-Madison); Umit Ogras (University of Wisconsin-Madison)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1KdHzbCW4ucWbdur4Z7H8ps0Ay_qqws08/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Automatic Evaluation of Excavator Operators using Learned Reward Functions",
+      "authors": "Pranav Agarwal (École de technologie supérieure); Marek Teichmann (CM Labs); Sheldon Andrews (École de technologie supérieure); Samira Ebrahimi Kahou (École de technologie supérieure)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1ch-5I5DjNDLQIG57MINk2bYzqQn5PMUE/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Hierarchical Reinforcement Learning for Furniture Layout in Virtual Indoor Scenes",
+      "authors": "XINHAN DI (Deepearthgo); Pengqian Yu (Independent Researcher)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1a1iL4eAxG9mUvlKgybpcdk26hH5L33_K/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Reinforcement Learning-Based Air Traffic Deconfliction",
+      "authors": "Denis Osipychev (Boeing); Dragos Margineantu (Boeing)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Learning an Adaptive Forwarding Strategy for Mobile Wireless Networks: Resource Usage vs. Latency",
+      "authors": "Victoria Manfredi (Wesleyan University); Alicia P Wolfe (Wesleyan University); Xiaolan Zhang (Fordham University); Bing Wang (University of Connecticut)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1BUN9H8ay5nnpObT2i9SCYAwin9njoIdV/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Safe Reinforcement Learning for Automatic Insulin Delivery in Type I Diabetes",
+      "authors": "Maxime Louis (Diabeloop); Hector M Romero Ugalde (Diabeloop SA); Pierre Gauthier (Diabeloop); Alice Adenis (Diabeloop); Yousra Tourki (Diabeloop); Erik Huneker (Diabeloop)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/19tZoZ7MaF6BcOMzb1BlWtC9dlixCduUJ/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     },
+     {
+      "title": "Identifying Disparities in Sepsis Treatment by Learning the Expert Policy",
+      "authors": "Hyewon Jeong (MIT); Siddharth Nagar Nayak (Massachusetts Institute of Technology); Taylor W Killian (University of Toronto, Vector Institute); Sanjat Kanjilal (Harvard Medical School); Marzyeh Ghassemi (University of Toronto, Vector Institute)",
+      "links": [
+       [
+        "paper",
+        "https://drive.google.com/file/d/1p_zy_UiEUFYwbU0D8cfQzV4iBR1cpChG/view?usp=share_link"
+       ]
+      ],
+      "note": ""
+     }
+    ]
+   }
+  ],
+  "cfp": [
+   "Reinforcement learning (RL) is a general learning, predicting, and decision-making paradigm and applies broadly in many disciplines in science, engineering, and the arts. RL has seen prominent successes in many problems, such as those in simulated environments like Atari games and AlphaGo, and those in real life like robotics, recommender systems, and nuclear fusion. However, given the significant theoretical and algorithmic gains made in the past few years, applying RL in real life remains challenging, and a natural question is:",
+   "Why isn’t RL used even more often and how can we improve this?",
+   "The main goals of the workshop are to: (1) identify key research problems that are critical for the success of real-world applications; (2) report progress on addressing these critical issues; and (3) have practitioners share their success stories of applying RL to real-world problems, and the insights gained from such applications.",
+   "We invite paper submissions of original work successfully applying RL algorithms to real-life problems and/or addressing practically relevant RL issues. Our topics of interest are general, w.r.t. practical RL algorithms, practical issues, and applications.",
+   "Topics of interest include (but are not limited to):",
+   "+ studies about real-life RL systems, esp. about deployment/product",
+   "+ significant efforts for a high-fidelity simulator, esp. for a complicated system",
+   "+ significant efforts for benchmarks/datasets",
+   "+ significant efforts for human factors",
+   "The following alone is not considered real-life RL:",
+   "- practical work with existing simulator/benchmark/dataset only, w/o significant real-life efforts",
+   "- theory/algorithm work with toy/simple experiments only, w/o significant real-life efforts"
+  ],
+  "dates": [
+   [
+    "Deadline",
+    "Sep. 15, 2022"
+   ],
+   [
+    "Notification",
+    "Oct. 20, 2022 (extended from Oct. 15)"
+   ]
+  ],
+  "cfp_extra": [
+   "We invite unpublished submissions up to 9 pages excluding references and appendix, in PDF format using the NeurIPS 2022 template and style guidelines. Here is a customized<a href=\"https://drive.google.com/file/d/1sJxU8cTK3DzsIPI0kkO6720j3hzRGwY-/view?usp=sharing\" target=\"_blank\" rel=\"noopener\">style file</a> for the workshop. (In the .tex file, use \"\\usepackage{neurips_2022}\" for the submission, and use \"\\usepackage[final]{neurips_2022}\" for the final version if accepted.) The paper review process will be double-blind. All accepted papers will be presented as posters, some as spotlight talks, and all will be made available on the workshop website. Accepted papers are non-archival, i.e. there will be no proceedings for this workshop. Selected papers will be further considered for the Machine Learning Journal Special Issue on Reinforcement Learning for Real Life.",
+   "The submission website is:",
+   "<a href=\"https://cmt3.research.microsoft.com/RL4RealLife2022/Track/1/Submission/Create\" target=\"_blank\" rel=\"noopener\">https://cmt3.research.microsoft.com/RL4RealLife2022/</a> (Choose “Papers”)"
+  ],
+  "call_for_panels": [
+   "We invite proposals for panel discussions at the Reinforcement Learning for Real Life (RL4RealLife)<a href=\"2022.html\" target=\"_blank\" rel=\"noopener\">Workshop</a> @ NeurIPS 2022.",
+   "The proposed panel should be informative and engaging. We expect selected panels to address novel, aspiring, and open questions of broad interest to the RL4RealLife community. Each panel is a 60-minute session. We encourage fully in-person panels, and consider virtual ones as well.",
+   "A panel proposal must include:",
+   "+ A title and a description of the content. (two pages)",
+   "* Why is the topic of interest to the RL4RealLife community?",
+   "* What are possible perspectives that might spark discussions?",
+   "* Who are the panelists? Who has been confirmed?",
+   "* What are the likely positions of the panelists on the topic?",
+   "* What are the potential questions to facilitate discussions?",
+   "* How will the audience be involved in the discussions?",
+   "+ An account of the efforts made to ensure diversity of the chair(s) and panelists.",
+   "+A very brief advertisement or tagline for the panel discussion, up to 140 characters, that highlights any key information you wish prospective attendees to know. Please input this as the abstract.",
+   "+ Name, affiliation, brief bios, and contact info for one or two chairs/moderators of the proposed panel. (no page limit)",
+   "+ Names, affiliations, and brief bios for up to 5 confirmed panelists. (no page limit)",
+   "The proposal is submitted as a single PDF file.",
+   "We will follow the Guidance for NeurIPS Workshop Proposals 2022,<a href=\"https://blog.neurips.cc/2022/04/24/guidance-for-neurips-workshop-proposals-2022/\" target=\"_blank\" rel=\"noopener\">https://blog.neurips.cc/2022/04/24/guidance-for-neurips-workshop-proposals-2022/</a>.",
+   "Our Call for Panels borrows ideas from<a href=\"https://vldb.org/2022/?call-for-panels\" target=\"_blank\" rel=\"noopener\">https://vldb.org/2022/?call-for-panels</a> and<a href=\"https://chi2022.acm.org/for-authors/interacting-and-discussing/panels/\" target=\"_blank\" rel=\"noopener\">https://chi2022.acm.org/for-authors/interacting-and-discussing/panels/</a>. We encourage potential panel organizers to refer to them.",
+   "Deadline: Aug. 30, 2022",
+   "Notification: Sep. 15, 2022",
+   "The submission website is:",
+   "<a href=\"https://cmt3.research.microsoft.com/RL4RealLife2022/Track/1/Submission/Create\" target=\"_blank\" rel=\"noopener\">https://cmt3.research.microsoft.com/RL4RealLife2022/</a> (Choose “Panel Proposals”)"
+  ],
+  "pc": [
+   "Abhishek Naik, University of Alberta",
+   "Abhishek Gupta, UC Berkeley",
+   "Aditya Modi, Michigan University",
+   "Alborz Geramifard, Facebook AI",
+   "Aleksandra Faust, Google Brain",
+   "Alex Lewandowski, University of Alberta",
+   "Anurag Ajay, MIT",
+   "Bardienus Duisterhof, Harvard University",
+   "Baturay Sağlam, Bilkent University",
+   "Bharathan Balaji, Amazon",
+   "Bo Chang, Google",
+   "Bo Dai, Google Brain",
+   "Branislav Kveton, Amazon",
+   "Chao Qin, Deepmind",
+   "Chih-wei Hsu, Google Research",
+   "Cong Lu, University of Oxford",
+   "Daochen Zha, Rice University",
+   "Di Wu, McGill",
+   "Dylan Ashley, The Swiss AI Lab IDSIA, USI, SUPSI",
+   "Frederik Schubert, Leibniz University Hannover",
+   "Fushan Li, Twitter",
+   "Glen Berseth, Université de Montréal, Mila",
+   "Gokul Swamy, Carnegie Mellon University",
+   "Hamsa Bastani, Wharton",
+   "Hanjun Dai, Google Brain",
+   "Haoran Xu, JD Technology",
+   "Haruka Kiyohara, Tokyo Institute of Technology",
+   "Hengshuai Yao, Sony AI",
+   "Hongming Zhang, University of Alberta",
+   "Hugo Caselles-Dupré, Flowers Team (ENSTA ParisTech & INRIA) & Softbank Robotics Europe",
+   "Ioannis Boukas, University of Liège",
+   "Iou-Jen Liu, University of Illinois at Urbana-Champaign",
+   "Jincheng Mei, Google Brain",
+   "Jingwei Zhang, Deepmind",
+   "Johannes Kirschner, University of Alberta",
+   "Joshua Greaves‎, Google",
+   "Juan Jose Garau Luis, MIT",
+   "Junfeng Wen, Carleton University",
+   "Konstantina Christakopoulou, Google",
+   "Kui Wu, University of Victoria",
+   "Luchen Li, Imperial College London",
+   "Manyou Ma, The University of British Columbia",
+   "Masatoshi Uehara, Cornell University",
+   "Maxime Heuillet, Universite Laval",
+   "Meng Qi, University of California, Berkeley",
+   "Mengxin Wang, University of California, Berkeley",
+   "Minghao Zhang, Tsinghua University",
+   "Myounggyu Won,University of Memphis",
+   "Nathan Dahlin, University of Illinois at Urbana-Champaign",
+   "Peng Liao, Harvard University",
+   "Rahul Kidambi, Amazon Search & AI",
+   "Rasool Fakoor, AWS",
+   "Ruofan Kong, Microsoft",
+   "Sahika Genc, Amazon Artificial Intelligence",
+   "Scott Rome, Comcast",
+   "Shangtong Zhang, University of Virginia",
+   "Shengpu Tang, University of Michigan",
+   "Shie Mannor, Technion",
+   "Shuai Li, Shanghai Jiao Tong University",
+   "Srijita Das, University of Alberta",
+   "Srivatsan Krishnan, Harvard University",
+   "Subhojyoti Mukherjee, University of Massachusetts Amherst",
+   "Tao Chen, MIT",
+   "Tengyang Xie, University of Illinois at Urbana-Champaign",
+   "Vianney Perchet, ENSAE & Criteo AI Lab",
+   "Victor Carbune, Google",
+   "Vincent Mai, Mila, Université de Montréal",
+   "Wei Qiu, Nanyang Technological University",
+   "Weixun Wang, Tianjin University",
+   "Wilka Carvalho, University of Michigan",
+   "Xianyuan Zhan, Tsinghua University",
+   "Xiao-Yang Liu, Columbia University",
+   "Xinyun Chen, Chinese University of Hong Kong, Shenzhen",
+   "Xuesu Xiao, University of Texas at Austin",
+   "Xuezhou Zhang, Princeton University",
+   "Ya Le, Google",
+   "Yiding Chen, University of Wisconsin-Madison",
+   "Yijie Guo, University of Michigan",
+   "Yingru Li, The Chinese University of Hong Kong, Shenzhen",
+   "Yinlam Chow, Google AI",
+   "Yongshuai Liu, University of California, Davis",
+   "Yuandong Tian, Meta",
+   "Yue Gao, University of Alberta",
+   "Yuping Luo, Princeton University",
+   "Yuqing Hou, Intel Labs China",
+   "Yuta Saito, Cornell University",
+   "Zhang-Hua Fu, The Chinese University of Hong Kong, Shenzhen",
+   "Zheqing Zhu, Stanford University",
+   "Zhimin Hou, National University of Singapore",
+   "Zhipeng Wang, Apple",
+   "Ziniu Li, The Chinese University of Hong Kong, Shenzhen"
+  ],
+  "chairs": [
+   {
+    "name": "Emma Brunskill",
+    "aff": "Stanford",
+    "url": "https://scholar.google.com/citations?hl=en&user=HaN8b2YAAAAJ",
+    "photo": "assets/people/emma-brunskill.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Minmin Chen",
+    "aff": "Google",
+    "url": "https://scholar.google.com/citations?user=kR7DersAAAAJ&hl=en&oi=ao",
+    "photo": "assets/people/minmin-chen.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Omer Gottesman",
+    "aff": "Amazon",
+    "url": "https://scholar.google.com/citations?user=glNJx5zYUbsC&hl=en",
+    "photo": "assets/people/omer-gottesman.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Lihong Li",
+    "aff": "Amazon",
+    "url": "https://lihongli.github.io",
+    "photo": "assets/people/lihong-li.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Yuxi Li",
+    "aff": "",
+    "url": "http://attain.ai",
+    "photo": "assets/people/yuxi-li.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Yao Liu",
+    "aff": "Amazon",
+    "url": "https://scholar.google.com/citations?user=umAny5UAAAAJ&hl=en",
+    "photo": "assets/people/yao-liu.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Zhiwei (Tony) Qin",
+    "aff": "Lyft",
+    "url": "http://tonyzqin.wordpress.com",
+    "photo": "assets/people/zhiwei-tony-qin.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Matthew E. Taylor",
+    "aff": "University of Alberta",
+    "url": "https://drmatttaylor.net",
+    "photo": "assets/people/matthew-e-taylor.png",
+    "role": "",
+    "links": []
+   }
+  ],
+  "guest_editors": [
+   {
+    "name": "Zongqing Lu",
+    "aff": "Peking University",
+    "url": "https://z0ngqing.github.io",
+    "photo": "assets/people/zongqing-lu.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Niranjani Prasad",
+    "aff": "Microsoft Research",
+    "url": "https://niranjaniprasad.github.io/",
+    "photo": "assets/people/niranjani-prasad.png",
+    "role": "",
+    "links": []
+   },
+   {
+    "name": "Csaba Szepesvari",
+    "aff": "DeepMind & University of Alberta",
+    "url": "https://sites.ualberta.ca/~szepesva/",
+    "photo": "assets/people/csaba-szepesvari.png",
+    "role": "",
+    "links": []
+   }
+  ],
+  "guest_editors_label": "Additional guest editors for the fast track MLJ Special Issue on RL4RealLife",
+  "comm": [
+   [
+    "Slack Workspace for RL4Real Life",
+    "https://join.slack.com/t/rl4reallife/shared_invite/zt-870ehl9e-N~ke75JWIzAYLUrJ3R0ZMg"
+   ],
+   [
+    "RL4RealLife@gmail.com",
+    "mailto:RL4RealLife@gmail.com"
+   ]
+  ],
+  "previous": [
+   [
+    "Synergy of Reinforcement Learning and Large Language Models (RL+LLMs) @ AAAI 2024",
+    "https://sites.google.com/view/rl-llm-aaai2024"
+   ],
+   [
+    "Fast track special issue with Machine Learning journal",
+    "https://link.springer.com/journal/10994/updates/19601294"
+   ],
+   [
+    "Reinforcement Learning for Real Life Virtual Workshop @ ICML 2021",
+    "2021.html"
+   ],
+   [
+    "Machine Learning Special Issue on Reinforcement Learning for Real Life",
+    "https://link.springer.com/journal/10994/topicalCollection/AC_350f3b54f0a813f13d3b54e8d0233bfc"
+   ],
+   [
+    "Reinforcement Learning for Real Life Virtual Workshop 2020",
+    "2020.html"
+   ],
+   [
+    "Reinforcement Learning for Real Life Workshop @ ICML 2019",
+    "2019.html"
+   ],
+   [
+    "More Workshops and Special Issue",
+    "#h.esspelqz0woy"
+   ],
+   [
+    "Schedule",
+    "#h.2ck4jvio1izd"
+   ],
+   [
+    "Invited talks",
+    "#h.dm8yggto6637"
+   ],
+   [
+    "Panels",
+    "#h.k6ytsf4bu64x"
+   ],
+   [
+    "Accepted Papers",
+    "#h.w2avbu4cjl6y"
+   ],
+   [
+    "Call For Papers",
+    "#h.k1feqc78ioi1"
+   ],
+   [
+    "Call for Panels",
+    "#h.6ix8u9gt4ad3"
+   ],
+   [
+    "TPC Members",
+    "#h.npllfi1zg7ue"
+   ],
+   [
+    "Co-Chairs",
+    "#h.2vacooh3yb5s"
+   ],
+   [
+    "Communication",
+    "#h.2img99entpta"
+   ]
+  ],
+  "venue_image": "assets/venues/2022.jpg",
+  "venue_credit": {},
+  "venue_focus": "center 58%"
+ }
+}
